@@ -1,6 +1,5 @@
-# TIL
-`Today I Learned`
-I use this to log things that I've learned.
+# TIL - Today I Learned
+I use this to log things that I learn.
 
 ### Categories
 * [Airflow](#airflow)
@@ -20,9 +19,11 @@ I use this to log things that I've learned.
 - TODO: hierarchical dictionaries for config files
 
 ### SAS
-- TODO: loops
+
+- TODO: SAS loops
 - TODO: macro variable gotchas
 
 ### SQL
+
 - TODO: pivot, unpivot
 
