@@ -14,9 +14,14 @@
 
 ### Python
 
-- [Test](python/test.md)
-- matplotlib
-- hierarchical dictionaries for config files
+- [jinja-sql-template-from-dataframe](jinja-sql-template-from-dataframe.md)
+- TODO: matplotlib subplots
+- TODO: hierarchical dictionaries for config files
 
 ### SAS
-- test
+- TODO: loops
+- TODO: macro variable gotchas
+
+### SQL
+- TODO: pivot, unpivot
+
