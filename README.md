@@ -14,7 +14,7 @@ I use this to log things that I learn.
 
 ### Python
 
-- [jinja-sql-template-from-dataframe](jinja-sql-template-from-dataframe.md)
+- [Templating SQL from a Pandas dataframe](jinja-sql-template-from-dataframe.md)
 - TODO: matplotlib subplots
 - TODO: hierarchical dictionaries for config files
 
