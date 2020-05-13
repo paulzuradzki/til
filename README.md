@@ -2,21 +2,18 @@
 I use this to log things that I learn.
 
 ### Categories
-* [Airflow](#airflow)
-* [Git](#git)
-* [Linux](#linux)
 * [Python](#python)
 * [SAS](#sas)
 * [SQL](#sql)
-* [Vim](#vim)
 
 ---
 
 ### Python
 
+- TODO: Default vs over-ride config parameters with dictionaries
 - [Templating SQL from a Pandas dataframe](jinja-sql-template-from-dataframe.md)
-- TODO: matplotlib subplots
-- TODO: hierarchical dictionaries for config files
+- TODO: xlwings - Read/write data with Excel
+- TODO: matplotlib - Make subplots 
 
 ### SAS
 
