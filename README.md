@@ -1,5 +1,6 @@
 # TIL
 `Today I Learned`
+I use this to log things that I've learned.
 
 ### Categories
 * [Airflow](#airflow)
