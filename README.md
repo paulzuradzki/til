@@ -9,7 +9,7 @@ I use this to log things that I learn.
 ---
 
 ### Python
-
+- [OOP](oop-demo.md)
 - TODO: Default vs over-ride config parameters with dictionaries
 - [Templating SQL from a Pandas dataframe](jinja-sql-template-from-dataframe.md)
 - TODO: xlwings - Read/write data with Excel
