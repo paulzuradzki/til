@@ -17,13 +17,10 @@ I use this to log things that I learn.
 - TODO: matplotlib - Make subplots 
 
 ### SAS
-
 - [SAS Loops](sas/sas-loops.md)
 - [Expand date spans to year-month view](sas/expand-dates.md)
 - [Comparing terminology for similar concepts in Python and SAS](sas/sas-vs-python-semantics.md)
-- TODO: macro variable gotchas
+- [Disambiguating double ampersand and period in SAS macro variables](sas/sas-syntax-double&&-periods.md)
 
 ### SQL
-
 - TODO: pivot, unpivot
-
