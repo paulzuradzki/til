@@ -1,3 +1,5 @@
+Brief demo of object-oriented programming concepts in Python
+
 ```python
 """oop_demo.py
 
@@ -66,4 +68,18 @@ if __name__ == "__main__":
         pass
 >>> b = Wizard(name="bot1", level=100)
 """
+```
+___
+
+Output
+```
+Gandolf is moving
+Pikachu is moving
+Gandolf casting: wingardium
+Charizard breathing blue fire
+Charizard breathing red fire
+wizard name is: Gandolf
+wizard level is: 12
+dragon --> name: Charizard, 'level': 20
+wizard --> name: Gandolf, 'level': 12
 ```
