@@ -18,7 +18,7 @@ I use this to log things that I learn.
 
 ### SAS
 
-- TODO: SAS loops
+- [Loops](sas/sas-loops.md)
 - TODO: macro variable gotchas
 
 ### SQL
