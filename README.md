@@ -1,5 +1,5 @@
 # TIL - Today I Learned
-I use this to log things that I learn.
+I use this to log things that I learn or want to reference.
 
 ### Categories
 * [Python](#python)
