@@ -18,7 +18,8 @@ I use this to log things that I learn.
 
 ### SAS
 
-- [Loops](sas/sas-loops.md)
+- [SAS Loops](sas/sas-loops.md)
+- [Expand date spans to year-month view](expand-dates.md)
 - TODO: macro variable gotchas
 
 ### SQL
