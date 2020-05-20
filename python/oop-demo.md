@@ -61,7 +61,6 @@ if __name__ == "__main__":
     print("dragon -->", d)
     print("wizard -->", w)
 ```
-"""
 
 ```python
 # Classes can have more than 1 parent (multiple inheritance). 
