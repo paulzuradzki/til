@@ -60,14 +60,15 @@ if __name__ == "__main__":
     print("wizard level is:", w.level)
     print("dragon -->", d)
     print("wizard -->", w)
-
+```
 """
+
+```python
 # Classes can have more than 1 parent (multiple inheritance). 
-# let's say that a Wizard can inherit from both Player and Bot classes
+# Let's say that a Wizard can inherit from both Player and Bot classes
 >>> class Wizard(Player, Bot):
         pass
 >>> b = Wizard(name="bot1", level=100)
-"""
 ```
 ___
 
