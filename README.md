@@ -12,9 +12,9 @@ I use this to log things that I learn.
 - [OOP example](python/oop-demo.md)
 - [Pandas - Concatenate strings from rows with GroupBy](python/pandas-concat-strings-from-rows-with-groupby.md)
 - [Templating SQL from a Pandas dataframe](python/jinja-sql-template-from-dataframe.md)
-- TODO: Default vs over-ride config parameters with dictionaries
-- TODO: xlwings - Read/write data with Excel
-- TODO: matplotlib - Make subplots 
+- [Dictionary un-packing and how to set default and override configurations](python/dictionary-unpacking-for-configs.md)
+- TODO: xlwings - read & write with Excel; split & merge sheets and workbooks
+- TODO: matplotlib - subplots
 
 ### SAS
 - [SAS Loops](sas/sas-loops.md)
