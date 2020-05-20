@@ -20,6 +20,7 @@ I use this to log things that I learn.
 
 - [SAS Loops](sas/sas-loops.md)
 - [Expand date spans to year-month view](sas/expand-dates.md)
+- [Comparing terminology for similar concepts in Python and SAS](sas/sas-vs-python-semantics.md)
 - TODO: macro variable gotchas
 
 ### SQL
