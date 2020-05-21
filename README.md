@@ -15,7 +15,7 @@ I use this to log things that I learn or want to reference.
 - [Dictionary un-packing and how to set default and override configurations](python/dictionary-unpacking-for-configs.md)
 - TODO: xlwings - read & write with Excel; split & merge sheets and workbooks
 - TODO: matplotlib - subplots
-- TODO: pandas pivoting methods and advanced label control
+- TODO: pandas pivoting methods and "named aggregations"
 
 ### SAS
 - [SAS Loops](sas/sas-loops.md)
