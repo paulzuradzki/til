@@ -1,8 +1,6 @@
 ```python
-# df.query() can be used in place boolean indexing for more concise code
 # if you prefer not to re-reference the source dataframe
-# dataf
-
+# df.query() can be used in place boolean indexing for more concise code
 
 values_df = pd.DataFrame([[15.0], [24.0], [1.0], [98.0], [48.0], [97.0], [29.0], [86.0], [27.0], [59.0]], columns=['values'])
 # equivalent:
@@ -14,6 +12,7 @@ states_df = pd.DataFrame([['CALIFORNIA', 'CA'], ['FLORIDA', 'FL'], ['ILLINOIS', 
                           ['WISCONSIN', 'WI'], ['WYOMING', 'WY']],
             columns=['state', 'abbr'])
 # equivalent:
+  # dataframe index and column methods are brought into namespace of query parser, so we can access <Series>.str.contains(...)
 states_filtered = states_df.query("abbr.str.contains('IL')")
 states_filtered = states_df[states_df['abbr'].str.contains('IL')]
 ```
