@@ -17,6 +17,7 @@ Here I log technical learnings and snippets that I imagine myself re-using.
 - TODO: xlwings - read & write with Excel; split & merge sheets and workbooks
 - TODO: matplotlib - subplots
 - TODO: pandas pivoting methods and "named aggregations"
+- TODO: pandas dataframe display in Jupyter
 
 ### SAS
 - [SAS Loops](sas/sas-loops.md)
