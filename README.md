@@ -18,6 +18,9 @@ Here I log technical learnings and snippets that I imagine myself re-using.
 - TODO: matplotlib - subplots
 - TODO: pandas pivoting methods and "named aggregations"
 - TODO: pandas dataframe display in Jupyter
+- TODO: use df.rename_axis(None, axis='columns').reset_index(drop=True) to manipulate index and axis name and remove multi-index
+  - pivoted = pivoted['tripduration'].reset_index()
+  - pivoted = pivoted.rename_axis(None, axis='columns').reset_index(drop=True)
 
 ### SAS
 - [SAS Loops](sas/sas-loops.md)
