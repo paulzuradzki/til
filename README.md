@@ -10,6 +10,7 @@ Here I log technical learnings and snippets that I imagine myself re-using.
 
 ### Python
 - [OOP example](python/oop-demo.md)
+- [OOP classes vs namedtuple](python/oop-namedtuple.py)
 - [Pandas - Concatenate strings from rows with GroupBy](python/pandas-concat-strings-from-rows-with-groupby.md)
 - [Templating SQL from a Pandas dataframe](python/jinja-sql-template-from-dataframe.md)
 - [Dictionary un-packing and how to set default and override configurations](python/dictionary-unpacking-for-configs.md)
