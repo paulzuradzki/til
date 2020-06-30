@@ -23,7 +23,7 @@ print(mycar.model)
 print(mycar.year)
 print(repr(mycar))
 
-# represent these attributes using named tuple `AutoNT1`
+# represent these attributes using named tuple `AutoNT`
 from collections import namedtuple
 
 AutoNT = namedtuple('Auto', ['make', 'model', 'year'])
