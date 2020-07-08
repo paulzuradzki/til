@@ -1,5 +1,5 @@
 # TIL - Today I Learned
-Here I log technical learnings and snippets that I imagine myself re-using.
+Here I log things I learn and code snippets that I keep forgetting.
 
 ### Categories
 * [Python](#python)
