@@ -11,7 +11,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 ### Python
 - [OOP example](python/oop-demo.md)
 - [OOP classes vs namedtuple](python/oop-namedtuple.py)
-- [Pandas - Concatenate strings from rows with GroupBy](python/pandas-concat-strings-from-rows-with-groupby.md)
+- [pandas - Concatenate strings from rows with GroupBy](python/pandas-concat-strings-from-rows-with-groupby.md)
 - [Templating SQL from a Pandas dataframe](python/jinja-sql-template-from-dataframe.md)
 - [Dictionary un-packing and how to set default and override configurations](python/dictionary-unpacking-for-configs.md)
 - [Selecting data with df.query()](python/pandas-df-query.md)
@@ -22,6 +22,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - TODO: use df.rename_axis(None, axis='columns').reset_index(drop=True) to manipulate index and axis name and remove multi-index
   - pivoted = pivoted['tripduration'].reset_index()
   - pivoted = pivoted.rename_axis(None, axis='columns').reset_index(drop=True)
+ - [xlwings - add hyperlinks within a workbook](python/xl-add-hyperlinks-in-workbook.md)
 
 ### SAS
 - [SAS Loops](sas/sas-loops.md)
