@@ -1,8 +1,8 @@
 ### Algorithm to determine the square root of N:
 * start with an arbitray guess (ex: 1)
 * square the guess and take the absolute value of the difference from N
-  * if it's close enough within some tolerance value (ex: 0.0001), then return the guess
-  * else, make a new guess equal to the average of (guess + N/guess) and re-attempt
+  * if this difference is close enough within some tolerance value (ex: 0.0001), then return the guess as the final result
+  * else make a new guess equal to the average of (guess + N/guess) and re-attempt until the guess recursively converges toward square root of N
 
 ```python
 
