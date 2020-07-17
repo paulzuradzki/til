@@ -24,6 +24,7 @@ Here I log things I learn or code snippets that I keep forgetting.
   - pivoted = pivoted.rename_axis(None, axis='columns').reset_index(drop=True)
  - [xlwings - add hyperlinks within a workbook](python/xl-add-hyperlinks-in-workbook.md)
  - [pandas - miscellaneous](python/pandas-misc.md)
+ - [Heron's Method for Square Roots](python/square_root.md)
 
 ### SAS
 - [SAS Loops](sas/sas-loops.md)
