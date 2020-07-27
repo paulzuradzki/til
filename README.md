@@ -25,6 +25,7 @@ Here I log things I learn or code snippets that I keep forgetting.
  - [xlwings - add hyperlinks within a workbook](python/xl-add-hyperlinks-in-workbook.md)
  - [pandas - miscellaneous](python/pandas-misc.md)
  - [Heron's Method for Square Roots](python/square_root.md)
+ - [Traverse file tree recursively](python/traverse-files.md)
 
 ### SAS
 - [SAS Loops](sas/sas-loops.md)
