@@ -26,6 +26,7 @@ Here I log things I learn or code snippets that I keep forgetting.
  - [pandas - miscellaneous](python/pandas-misc.md)
  - [Heron's Method for Square Roots](python/square_root.md)
  - [Traverse file tree recursively](python/traverse-files.md)
+ - [So You Want to Learn Python... (Python resource list)](python/so-you-want-to-learn-python.md)
 
 ### SAS
 - [SAS Loops](sas/sas-loops.md)
