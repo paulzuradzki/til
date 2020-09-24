@@ -37,3 +37,6 @@ Here I log things I learn or code snippets that I keep forgetting.
 
 ### SQL
 - TODO: pivot, unpivot
+
+### Editors
+- [VS Code - configuration for Anaconda prompt](editors/vs-code/settings.json)
