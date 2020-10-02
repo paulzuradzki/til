@@ -22,6 +22,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - TODO: use df.rename_axis(None, axis='columns').reset_index(drop=True) to manipulate index and axis name and remove multi-index
   - pivoted = pivoted['tripduration'].reset_index()
   - pivoted = pivoted.rename_axis(None, axis='columns').reset_index(drop=True)
+ - [pivot non-numeric rows to x columns](python/pivot-non-numeric-to-x-fields.md)
  - [xlwings - add hyperlinks within a workbook](python/xl-add-hyperlinks-in-workbook.md)
  - [pandas - miscellaneous](python/pandas-misc.md)
  - [Heron's Method for Square Roots](python/square_root.md)
