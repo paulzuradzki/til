@@ -16,6 +16,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - [Dictionary un-packing and how to set default and override configurations](python/dictionary-unpacking-for-configs.md)
 - [Selecting data with df.query()](python/pandas-df-query.md)
 - [Flatten a dictionary](python/flatten-dict.md)
+- [Iterative vs. Recursive Processes with Factorial](python/recursion-factorial.md)
 - TODO: xlwings - read & write with Excel; split & merge sheets and workbooks
 - TODO: matplotlib - subplots
 - TODO: pandas pivoting methods and "named aggregations"
