@@ -1,4 +1,4 @@
-# TIL - Today I Learned
+# Today I Learned (TIL)
 Here I log things I learn or code snippets that I keep forgetting.
 
 ### Categories
