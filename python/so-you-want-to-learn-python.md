@@ -1,6 +1,6 @@
 # So You Want to Learn Python...
 
-What follows is an outline of what I've sent people asking for resources to learn progrmaming and data analysis in Python.
+What follows is an outline of what I've sent people asking for resources to learn programming and data analysis in Python.
 
 ### Intro Python
 
