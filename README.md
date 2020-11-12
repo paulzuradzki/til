@@ -17,6 +17,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - [Selecting data with df.query()](python/pandas-df-query.md)
 - [Flatten a dictionary](python/flatten-dict.md)
 - [Iterative vs. Recursive Processes with Factorial](python/recursion-factorial.md)
+- [Method chaining by returning self](python/method-chaining.md)
 - TODO: xlwings - read & write with Excel; split & merge sheets and workbooks
 - TODO: matplotlib - subplots
 - TODO: pandas pivoting methods and "named aggregations"
