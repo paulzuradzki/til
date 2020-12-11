@@ -29,3 +29,6 @@ Ted Petrou series - "Selecting Subsets"
 
 Tom Augspurger series (intermediate/advanced)
 * ["Modern Pandas"](https://tomaugspurger.github.io/modern-1-intro.html)
+
+### More Computer Science and General Programming Languages
+[Harvard CS50](https://cs50.harvard.edu/). I started auditing CS50 by watching the lectures on long plane flights. This is a less direct route to learning Python per se because CS50 starts out in C and tours a bunch of other languages (including Python). I still highly recommend CS50 if you're coming from a non-traditional CS backround. It's very easy to go from C to Python due to easier syntax and how you get many utilities in Python for free (garbage collection, loose typing, etc). C is a small language and many other languages -- C++, Java, JavaScript -- borrow from C syntax (ex: curly braces, C-style loops, and type declarations). This means if you venture outside of Python, it's often easier to pick up those languages too after learning C.
