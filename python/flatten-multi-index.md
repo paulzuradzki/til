@@ -16,3 +16,10 @@ multi_df.columns = [
 ```
 
 
+# Also try
+`df.rename_axis(None, axis='columns').reset_index(drop=True)` to manipulate index and axis name and remove multi-index.
+E.g.,
+```python
+pivoted = pivoted['tripduration'].reset_index()
+pivoted = pivoted.rename_axis(None, axis='columns').reset_index(drop=True)
+```
