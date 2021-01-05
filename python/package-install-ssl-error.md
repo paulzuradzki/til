@@ -12,7 +12,7 @@ Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED]
 References:
 * https://python-forum.io/printthread.php?tid=12634
 * http://seanlaw.github.io/2015/12/23/fetching-conda-packages-behind-a-firewall/
-
+* https://jupyterlab.readthedocs.io/en/latest/getting_started/installation.html
 
 # Solution
 ```shell
