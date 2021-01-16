@@ -5,6 +5,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 * [Python](#python)
 * [SAS](#sas)
 * [SQL](#sql)
+* [C](#C)
 
 ---
 
@@ -41,6 +42,9 @@ Here I log things I learn or code snippets that I keep forgetting.
 
 ### SQL
 - TODO: pivot, unpivot
+
+### C
+- [Tic Tac Toe CLI](c/ttt.c)
 
 ### Editors
 - [VS Code - configuration for Anaconda prompt](editors/vs-code/settings.json)
