@@ -46,6 +46,10 @@ Here I log things I learn or code snippets that I keep forgetting.
 ### C
 - [Tic Tac Toe CLI](c/ttt.c)
 
+### Linux
+- [Check processes](linux/check-processes.md)
+- [Check listening ports](linux-check-listening-ports)
+
 ### Editors
 - [VS Code - configuration for Anaconda prompt](editors/vs-code/settings.json)
 
