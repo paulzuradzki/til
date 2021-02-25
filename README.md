@@ -6,6 +6,8 @@ Here I log things I learn or code snippets that I keep forgetting.
 * [SAS](#sas)
 * [SQL](#sql)
 * [C](#C)
+* [Linux](#Linux)
+* [Editors](#Editors)
 
 ---
 
