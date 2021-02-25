@@ -48,7 +48,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 
 ### Linux
 - [Check processes](linux/check-processes.md)
-- [Check listening ports](linux-check-listening-ports)
+- [Check listening ports](linux/check-listening-ports)
 
 ### Editors
 - [VS Code - configuration for Anaconda prompt](editors/vs-code/settings.json)
