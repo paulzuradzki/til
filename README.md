@@ -30,6 +30,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - [So You Want to Learn Python... (Python resource list)](python/so-you-want-to-learn-python.md)
 - [Troubleshooting package installation SSL error on corporate firewall](python/package-install-ssl-error.md)
 - [Process large data sets by chunk in pandas](python/pandas-process-data-by-chunk.md)
+- [pandas - Summarize Frequency Counts with Percentages by Column](python/pandas-show-frequency-counts-with-percent.md)
 - TODO: xlwings - read & write with Excel; split & merge sheets and workbooks
 - TODO: matplotlib - subplots
 - TODO: pandas pivoting methods and "named aggregations"
