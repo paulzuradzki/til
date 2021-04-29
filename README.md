@@ -31,6 +31,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - [Troubleshooting package installation SSL error on corporate firewall](python/package-install-ssl-error.md)
 - [Process large data sets by chunk in pandas](python/pandas-process-data-by-chunk.md)
 - [pandas - Summarize Frequency Counts with Percentages by Column](python/pandas-show-frequency-counts-with-percent.md)
+- [pandas - Idiomatic Pandas: chaining, piping, inspecting and assigning intermediate dataframes](python/idiomatic-pandas.md)
 - TODO: xlwings - read & write with Excel; split & merge sheets and workbooks
 - TODO: matplotlib - subplots
 - TODO: pandas pivoting methods and "named aggregations"
