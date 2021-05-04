@@ -12,6 +12,10 @@ Here I log things I learn or code snippets that I keep forgetting.
 ---
 
 ### Python
+- [Process large data sets by chunk in pandas](python/pandas-process-data-by-chunk.md)
+- [pandas - Idiomatic Pandas: chaining, piping, inspecting and assigning intermediate dataframes](python/idiomatic-pandas.md)
+- [pandas - Summarize Frequency Counts with Percentages by Column](python/pandas-show-frequency-counts-with-percent.md)
+- [Create timezones for Python datetime objects](python/handle-timezones-in-python.md)
 - [OOP example](python/oop-demo.md)
 - [OOP classes vs namedtuple](python/oop-namedtuple.py)
 - [pandas - Concatenate strings from rows with GroupBy](python/pandas-concat-strings-from-rows-with-groupby.md)
@@ -29,9 +33,6 @@ Here I log things I learn or code snippets that I keep forgetting.
 - [Traverse file tree recursively](python/traverse-files.md)
 - [So You Want to Learn Python... (Python resource list)](python/so-you-want-to-learn-python.md)
 - [Troubleshooting package installation SSL error on corporate firewall](python/package-install-ssl-error.md)
-- [Process large data sets by chunk in pandas](python/pandas-process-data-by-chunk.md)
-- [pandas - Summarize Frequency Counts with Percentages by Column](python/pandas-show-frequency-counts-with-percent.md)
-- [pandas - Idiomatic Pandas: chaining, piping, inspecting and assigning intermediate dataframes](python/idiomatic-pandas.md)
 - TODO: xlwings - read & write with Excel; split & merge sheets and workbooks
 - TODO: matplotlib - subplots
 - TODO: pandas pivoting methods and "named aggregations"
