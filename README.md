@@ -44,7 +44,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - [Comparing terminology for similar concepts in Python and SAS](sas/sas-vs-python-semantics.md)
 - [Disambiguating double ampersand and period in SAS macro variables](sas/sas-syntax-double&&-periods.md)
 - [RSUBMIT and asynchronous SAS tasks](sas/rsubmit_async.md)
-- TODO: importing CSVs
+- [Export SAS to Excel example](sas/export-sas-to-excel.md)
 
 ### SQL
 - TODO: pivot, unpivot
