@@ -12,6 +12,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 ---
 
 ### Python
+- [Send Outlook emails with Win COM](python/send-outlook-emails-with-win-com)
 - [Install packages from jupyter](python/install-packages-from-jupyter.md)
 - [Process large data sets by chunk in pandas](python/pandas-process-data-by-chunk.md)
 - [pandas - Idiomatic Pandas: chaining, piping, inspecting and assigning intermediate dataframes](python/idiomatic-pandas.md)
