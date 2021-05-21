@@ -12,6 +12,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 ---
 
 ### Python
+- [Install packages from jupyter](python/install-packages-from-jupyter.md)
 - [Process large data sets by chunk in pandas](python/pandas-process-data-by-chunk.md)
 - [pandas - Idiomatic Pandas: chaining, piping, inspecting and assigning intermediate dataframes](python/idiomatic-pandas.md)
 - [pandas - Summarize Frequency Counts with Percentages by Column](python/pandas-show-frequency-counts-with-percent.md)
