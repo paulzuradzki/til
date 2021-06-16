@@ -12,6 +12,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 ---
 
 ### Python
+- [Fast load to MSSQL / SQL Server from Python client](python/fast-load-to-sql-server.md)
 - [Send Outlook emails with Win COM](python/send-outlook-emails-with-win-com.md)
 - [Install packages from jupyter](python/install-packages-from-jupyter.md)
 - [Process large data sets by chunk in pandas](python/pandas-process-data-by-chunk.md)
