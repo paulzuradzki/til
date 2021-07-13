@@ -8,6 +8,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 * [C](#C)
 * [Linux](#Linux)
 * [Editors](#Editors)
+* [Resources](#Resources)
 
 ---
 
@@ -34,12 +35,21 @@ Here I log things I learn or code snippets that I keep forgetting.
 - [pandas - miscellaneous](python/pandas-misc.md)
 - [Heron's Method for Square Roots](python/square_root.md)
 - [Traverse file tree recursively](python/traverse-files.md)
-- [So You Want to Learn Python... (Python resource list)](python/so-you-want-to-learn-python.md)
 - [Troubleshooting package installation SSL error on corporate firewall](python/package-install-ssl-error.md)
 - TODO: xlwings - read & write with Excel; split & merge sheets and workbooks
 - TODO: matplotlib - subplots
 - TODO: pandas pivoting methods and "named aggregations"
 - TODO: pandas dataframe display in Jupyter
+- TODO: mixin inheritance pattern
+- TODO: packaging - allow pip install from private repo
+- TODO: packaging - PyPi
+- TODO: packaging - allow pip install from tar zip for offline deployment
+- TODO: class decorators
+- TODO: decorator demo; timer and logger
+- TODO: closure demo
+- TODO: generator and generator expressions to process large file
+- TODO: making a class support Python container and iteration protocols
+- TODO: producer-consumer with and without queue
 
 ### SAS
 - [SAS Loops](sas/sas-loops.md)
@@ -62,4 +72,5 @@ Here I log things I learn or code snippets that I keep forgetting.
 ### Editors
 - [VS Code - configuration for Anaconda prompt](editors/vs-code/settings.json)
 
-
+### Resources
+- [So You Want to Learn Python... (Python resource list)](python/so-you-want-to-learn-python.md)
