@@ -13,6 +13,8 @@ Here I log things I learn or code snippets that I keep forgetting.
 ---
 
 ### Python
+- [pandas - Pivot from columns to rows](python/pivot-rows-to-columns.md)
+- [pandas - Display HTML representation of multiple dataframes](python/display-html-repr-jupyter.md)
 - [Fast load to MSSQL / SQL Server from Python client](python/fast-load-to-sql-server.md)
 - [Send Outlook emails with Win COM](python/send-outlook-emails-with-win-com.md)
 - [Install packages from jupyter](python/install-packages-from-jupyter.md)
@@ -39,7 +41,6 @@ Here I log things I learn or code snippets that I keep forgetting.
 - TODO: xlwings - read & write with Excel; split & merge sheets and workbooks
 - TODO: matplotlib - subplots
 - TODO: pandas pivoting methods and "named aggregations"
-- TODO: pandas dataframe display in Jupyter
 - TODO: mixin inheritance pattern
 - TODO: packaging - allow pip install from private repo
 - TODO: packaging - PyPi
