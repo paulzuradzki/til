@@ -1,9 +1,11 @@
+Demonstration of API usage with Python `requests` module using a foreign exchange rates data provider. 
+
 ```python
 
 import requests
 import pandas as pd
 
-# cet response from foreign exchange rate API
+# get response from foreign exchange rate API
 # Provide key. Free limited API account available for EUR rates.
 ACCESS_KEY = ''
 resp = requests.get(f'http://api.exchangeratesapi.io/v1/latest?access_key={ACCESS_KEY}&base=EUR')
