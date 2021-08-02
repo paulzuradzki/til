@@ -13,6 +13,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 ---
 
 ### Python
+- [API Usage Demo - FX Rates with Python Requests](python/api-usage-demo-fx-rates.md)
 - [pandas - Pivot from columns to rows](python/pivot-rows-to-columns.md)
 - [pandas - Display HTML representation of multiple dataframes](python/display-html-repr-jupyter.md)
 - [Fast load to MSSQL / SQL Server from Python client](python/fast-load-to-sql-server.md)
