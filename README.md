@@ -13,7 +13,8 @@ Here I log things I learn or code snippets that I keep forgetting.
 ---
 
 ### Python
-- [Get media files (ex: mp4) metadata with TinyTag](python/tag-metadata-for-media-files-mp4.md)
+- [Merge mp4 movie files with moviepy.editor](python/merge-mp4-movie-files.md)
+- [Get media file metadata with TinyTag](python/tag-metadata-for-media-files-mp4.md)
 - [API Usage Demo - FX Rates with Python Requests](python/api-usage-demo-fx-rates.md)
 - [pandas - Pivot from columns to rows](python/pivot-rows-to-columns.md)
 - [pandas - Display HTML representation of multiple dataframes](python/display-html-repr-jupyter.md)
