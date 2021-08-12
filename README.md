@@ -54,6 +54,8 @@ Here I log things I learn or code snippets that I keep forgetting.
 - TODO: generator and generator expressions to process large file
 - TODO: making a class support Python container and iteration protocols
 - TODO: producer-consumer with and without queue
+- TODO: threading, thread pool, locks, and parallel loops
+- TODO: async demo with timer/simulated SQL (long query)
 
 ### SAS
 - [SAS Loops](sas/sas-loops.md)
