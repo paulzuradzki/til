@@ -80,3 +80,13 @@ Here I log things I learn or code snippets that I keep forgetting.
 
 ### Resources
 - [So You Want to Learn Python... (Python resource list)](python/so-you-want-to-learn-python.md)
+
+### Presentations
+* [Data Anonymization Fundamentals for Data Science](https://github.com/krasch/presentations/blob/master/pydata_Berlin_2016.pdf)
+
+### Libraries
+* Data cleaning
+    * [PrettPandas](https://github.com/HHammond/PrettyPandas)
+    * [tabulate](https://github.com/astanin/python-tabulate)
+    * [scrubadub](https://github.com/LeapBeyond/scrubadub)
+    * [ftfy(fixes text for you)](https://github.com/rspeer/python-ftfy)
