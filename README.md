@@ -57,6 +57,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - TODO: producer-consumer with and without queue
 - TODO: threading, thread pool, locks, and parallel loops
 - TODO: async demo with timer/simulated SQL (long query)
+- TODO: add steps for PyPi prep; modifying setup.py, sdist and bdist_wheel; twine upload to test, etc.
 
 ### SAS
 - [SAS Loops](sas/sas-loops.md)
