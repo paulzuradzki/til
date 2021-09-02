@@ -74,7 +74,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - [Tic Tac Toe CLI](c/ttt.c)
 
 ### Linux
-- [supervisorctl - daemon process control config example](supervisorctl-config-example.md)
+- [supervisorctl - daemon process control config example](linux/supervisorctl-config-example.md)
 - [nginx sample web server config](linux/nginx-web-server-config.md)
 - [Check processes](linux/check-processes.md)
 - [Check listening ports](linux/check-listening-ports.md)
