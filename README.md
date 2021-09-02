@@ -74,6 +74,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - [Tic Tac Toe CLI](c/ttt.c)
 
 ### Linux
+- [supervisorctl - daemon process control config example](supervisorctl-config-example.md)
 - [nginx sample web server config](linux/nginx-web-server-config.md)
 - [Check processes](linux/check-processes.md)
 - [Check listening ports](linux/check-listening-ports.md)
@@ -89,7 +90,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 
 ### Libraries
 * Data cleaning
-    * [PrettPandas](https://github.com/HHammond/PrettyPandas)
+    * [PrettyPandas](https://github.com/HHammond/PrettyPandas)
     * [tabulate](https://github.com/astanin/python-tabulate)
     * [scrubadub](https://github.com/LeapBeyond/scrubadub)
     * [ftfy(fixes text for you)](https://github.com/rspeer/python-ftfy)
