@@ -13,6 +13,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 ---
 
 ### Python
+- [Text-wrapping utility - `textwrapper`](python/textwrapper.md)
 - [Why use classes?](python/why-use-classes.md)
 - [Merge mp4 movie files with moviepy.editor](python/merge-mp4-movie-files.md)
 - [Get media file metadata with TinyTag](python/tag-metadata-for-media-files-mp4.md)
