@@ -13,6 +13,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 ---
 
 ### Python
+- [Python Excel Recipes with openpyxl and xlwings](python/openpyxl-xlwings-recipes.md)
 - [Text-wrapping utility - `textwrapper`](python/textwrapper.md)
 - [Why use classes?](python/why-use-classes.md)
 - [Merge mp4 movie files with moviepy.editor](python/merge-mp4-movie-files.md)
