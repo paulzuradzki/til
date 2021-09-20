@@ -136,10 +136,10 @@ def xlwings_demo():
     for sheet_name in ['iris', 'mpg']:
 
         # font formatting
-        wb.sheets[sheet_name]['A1'].font.name = 'calibri'
-        wb.sheets[sheet_name]['A1'].font.bold = True
-        wb.sheets[sheet_name]['A1'].font.size = 16
-        wb.sheets[sheet_name]['A1'].font.color = (255, 0, 0) # red
+        wb.sheets[sheet_name]['B1'].font.name = 'calibri'
+        wb.sheets[sheet_name]['B1'].font.bold = True
+        wb.sheets[sheet_name]['B1'].font.size = 16
+        wb.sheets[sheet_name]['B1'].font.color = (255, 0, 0) # red
 
         # autofit columns
         wb.sheets[sheet_name].autofit('c')
