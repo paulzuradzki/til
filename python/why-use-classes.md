@@ -14,9 +14,16 @@ Citation:
 ```
 # passing config looks a bit repetitive
 config = {...}
-do_foo(config, params)
-do_bar(config, params)
-do_yow(config, params)
+do_foo(config, params1)
+do_bar(config, params2)
+do_yow(config, params3)
+
+# maybe this usage would be less redundant?
+td = ThingDoer(config)  # initialize class
+td.do_foo(params1)      # call methods (functions in classes) that have access to the attribute 'config'
+td.do_bar(params2)
+td.do_yow(params3)
+
 ```
 
 Without classes
