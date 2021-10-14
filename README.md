@@ -13,6 +13,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 ---
 
 ### Python
+- [Fill PDF Forms with PyPDF2](python/pdf-fill-forms.md)
 - [Microsoft SQL Server (MSSQL) Connection String Example](python/mssql-config.md)
 - [Decorators Example](python/decorators.md)
 - [Python Excel Recipes with openpyxl and xlwings](python/openpyxl-xlwings-recipes.md)
