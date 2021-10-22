@@ -13,6 +13,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 ---
 
 ### Python
+- [Flatten nested list with generator](flatten_nested_list.md)
 - [Fill PDF Forms with PyPDF2](python/pdf-fill-forms.md)
 - [Microsoft SQL Server (MSSQL) Connection String Example](python/mssql-config.md)
 - [Decorators Example](python/decorators.md)
