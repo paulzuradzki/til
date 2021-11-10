@@ -9,6 +9,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 * [Linux](#Linux)
 * [Editors](#Editors)
 * [Resources](#Resources)
+* [Healthcare](#Healthcare)
 
 ---
 
