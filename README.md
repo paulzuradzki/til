@@ -101,3 +101,6 @@ Here I log things I learn or code snippets that I keep forgetting.
     * [tabulate](https://github.com/astanin/python-tabulate)
     * [scrubadub](https://github.com/LeapBeyond/scrubadub)
     * [ftfy(fixes text for you)](https://github.com/rspeer/python-ftfy)
+
+### Healthcare
+* [CMS Risk Adjustment Files](healthcare/cms-risk-adjustment-files.md)
