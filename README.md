@@ -78,6 +78,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - [Export SAS to Excel example](sas/export-sas-to-excel.md)
 
 ### SQL
+- [PostgreSQL fast bulk load via `copy from`](sql/fast-bulk-copy-postgres.md)
 - TODO: pivot, unpivot
 
 ### C
