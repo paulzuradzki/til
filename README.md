@@ -87,6 +87,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - [Tic Tac Toe CLI](c/ttt.c)
 
 ### Linux
+- TODO: systemd - deaemon process control config example
 - [supervisorctl - daemon process control config example](linux/supervisorctl-config-example.md)
 - [nginx sample web server config](linux/nginx-web-server-config.md)
 - [Check processes](linux/check-processes.md)
