@@ -8,6 +8,8 @@ The proxy redirects are can be specified by port on the same or separate servers
 
 Ex: a gunicorn Python WSGI process (or gunicorn process managed by supervisorctl / daemon process) can be listening on port 8050. An HTTPS request will be re-routed to the WSGI app. We can support multiple backend sites on one domain too.
 
+For research: handling subdomains on separate IP addresses. I believe the SSL cert needs to exist on the web server, else the IP address for the sub-domain won't be able to authenticate ownership with a Certificate Authority using certbot. This method works but there could likely be alternate approaches.
+
 ```bash
 
 # redirect http to https
