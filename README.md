@@ -93,7 +93,8 @@ Here I log things I learn or code snippets that I keep forgetting.
 - [Check listening ports](linux/check-listening-ports.md)
 
 ### Editors
-- [VS Code - configuration for Anaconda prompt](editors/vs-code/settings.json)
+- [VS Code - configuration for Anaconda prompt](editors/vs-code/settings-json.md)
+- [How to Remote SSH with `sudo` privilege in VS Code](vs-code/remote-ssh-with-sudo.md)
 
 ### Resources
 - [So You Want to Learn Python... (Python resource list)](python/so-you-want-to-learn-python.md)
