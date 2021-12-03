@@ -1,3 +1,4 @@
+```
 # settings.json
   # this config allows use of Anaconda prompt (and thus environments) in VS Code
   # the settings are quite esoteric. Note the following parameters:
@@ -27,3 +28,4 @@
     "python.pythonPath": "C:\\Users\\pzuradzki\\AppData\\Local\\Continuum\\miniconda3\\envs\\dev\\python.exe",
     "python.autoComplete.extraPaths": []
 }
+```
