@@ -49,7 +49,7 @@ lxml
 * notice the need to handroll a "_columns_best_fit" function
 * notice the use of pandas ExcelWriter to paste the dataframes
 * in xlwings, these come built-in
-* fonts/styling seems 
+* example uses Font() class to manage fonts/styling in contrast with xlwings where we set attributes directly
 
 ```python
 import openpyxl
