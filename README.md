@@ -15,6 +15,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 
 ### Python
 - TODO: Use of environment variables to protect credentials
+- [Adding to PYTHONPATH environment variable so Python can find modules](python/adding-to-pythonpath.md)
 - [Convert markdown to HTML using `markdown` library](python/convert-markdown-to-html.md)
 - [Set Comparison Statistics](python/set_comp_stats.md)
 - [Flatten nested list with generator](python/flatten_nested_list.md)
