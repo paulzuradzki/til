@@ -15,6 +15,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 
 ### Python
 - TODO: Use of environment variables to protect credentials
+- [Installing a package from Git repository, zip file, or PyPI](python/installing-package-from-git-repo.md)
 - [Adding to PYTHONPATH environment variable so Python can find modules](python/adding-to-pythonpath.md)
 - [Convert markdown to HTML using `markdown` library](python/convert-markdown-to-html.md)
 - [Set Comparison Statistics](python/set_comp_stats.md)
@@ -57,9 +58,6 @@ Here I log things I learn or code snippets that I keep forgetting.
 - TODO: matplotlib - subplots
 - TODO: pandas pivoting methods and "named aggregations"
 - TODO: mixin inheritance pattern
-- TODO: packaging - allow pip install from private repo
-- TODO: packaging - PyPi
-- TODO: packaging - allow pip install from tar zip for offline deployment
 - TODO: class decorators
 - TODO: decorator demo; timer and logger
 - TODO: closure demo
