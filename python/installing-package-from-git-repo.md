@@ -13,7 +13,7 @@ To publish a package publically to PyPI, see this tutorial.
 * https://realpython.com/pypi-publish-python-package
 * This will make the package installable using a public alias: `python -m pip install your_package`
 
-References on how to structure a package and distribute it:
+### References on how to structure a package and distribute it:
 * Packaging
   * https://dabeaz-course.github.io/practical-python/Notes/09_Packages/01_Packages.html
   * note use of `__init__.py` to stitch modules together into an easier interface for users  
@@ -22,3 +22,5 @@ References on how to structure a package and distribute it:
   * You can pip install from the resulting zip file locally
   * or post to remote repository
   * or publish to PyPI
+* Offline deployments for servers that are not connected to the internet
+ * https://realpython.com/offline-python-deployments-with-docker
