@@ -62,10 +62,10 @@ scores = sorted(list(enumerate(scores[0])), key=lambda x: x[1], reverse=True)
 
 # adding document so we have more than just the document index
 scores = [(doc_index, documents[doc_index], weight) for doc_index, weight in scores]
-scores_df = pd.DataFrame(scores, columns=['doc_index', 'document', 'weight'])
+scores_df = pd.DataFrame(scores, columns=['document_id', 'document', 'weight'])
 
 print("\nRANKED")
-print(scores_df.to_markdown())
+print(scores_df.to_markdown(index=False))
 ```
 
 ### Displayed Output
@@ -95,14 +95,14 @@ document_id=-1 is the query
 |             5 | 0.572   | 0.441      |             |        |  0.389 |       |           | 0.572          |
 
 RANKED
-|    |   doc_index | document                                                 |   weight |
-|---:|------------:|:---------------------------------------------------------|---------:|
-|  0 |           5 | news about presidential campaign                         | 1        |
-|  1 |           0 | news about                                               | 0.691693 |
-|  2 |           2 | news of presidential campaign                            | 0.639622 |
-|  3 |           3 | news of presidential campaign presidential candidate     | 0.582224 |
-|  4 |           1 | news about organic food campaign                         | 0.493316 |
-|  5 |           4 | news of organic food campaign campaign campaign campaign | 0.420465 |
+|   document_id | document                                                 |   weight |
+|--------------:|:---------------------------------------------------------|---------:|
+|             5 | news about presidential campaign                         | 1        |
+|             0 | news about                                               | 0.691693 |
+|             2 | news of presidential campaign                            | 0.639622 |
+|             3 | news of presidential campaign presidential candidate     | 0.582224 |
+|             1 | news about organic food campaign                         | 0.493316 |
+|             4 | news of organic food campaign campaign campaign campaign | 0.420465 |
 ```
 
 ### References
