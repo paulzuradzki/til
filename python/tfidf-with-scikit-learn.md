@@ -23,6 +23,8 @@ documents = ['news about',
 # one list with query as first item
 query_and_docs = [query] + documents
 
+
+
 # `transformed` is a "CSR" compressed sparse row vector by default
 # convert to array to get TFIDF weights for each term
 # vectorizer.get_feature_names_out() returns the terms in the vocabulary which align with transformed.indices (integers)
@@ -30,6 +32,8 @@ vectorizer = TfidfVectorizer()
 transformed = vectorizer.fit_transform(query_and_docs)
 tfidf_as_df = pd.DataFrame(data=transformed.toarray(), 
                            columns=vectorizer.get_feature_names_out())
+tfidf_as_df.index = tfidf_as_df.index - 1
+tfidf_as_df.index.name = 'document_id'
 
 #########################
 # display input / output
@@ -37,8 +41,8 @@ tfidf_as_df = pd.DataFrame(data=transformed.toarray(),
 
 print(f"query: {query}")
 print("documents:")
-for doc in documents: 
-    print('\t', doc)
+for idx, doc in enumerate(documents): 
+    print('\t', idx, doc)
 
 # Display enumerated features (terms and their "ID")
 # Display TFIDF matrix. Each row is a document vector where the column corresponds to a term. Each value is a weight.
@@ -46,6 +50,7 @@ for doc in documents:
 print("\n(index, feature_name)", tuple(enumerate(vectorizer.get_feature_names_out())), '', sep="\n")
 
 print("TFIDF MATRIX")
+print("document_id=-1 is the query")
 print(tfidf_as_df.round(3).replace(0, '').to_markdown())
 
 query_weights = transformed[0]
@@ -64,32 +69,30 @@ print(scores_df.to_markdown())
 ```
 
 ### Displayed Output
-* We can see that document #5 has the closest match. Document #5 is a document that matches the query itself.
-* The next closest match is document #0 ("news about").
-
 ```
 query: news about presidential campaign
 documents:
-	 news about
-	 news about organic food campaign
-	 news of presidential campaign
-	 news of presidential campaign presidential candidate
-	 news of organic food campaign campaign campaign campaign
-	 news about presidential campaign
+	 0 news about
+	 1 news about organic food campaign
+	 2 news of presidential campaign
+	 3 news of presidential campaign presidential candidate
+	 4 news of organic food campaign campaign campaign campaign
+	 5 news about presidential campaign
 
 (index, feature_name)
 ((0, 'about'), (1, 'campaign'), (2, 'candidate'), (3, 'food'), (4, 'news'), (5, 'of'), (6, 'organic'), (7, 'presidential'))
 
 TFIDF MATRIX
-|    | about   | campaign   | candidate   | food   |   news | of    | organic   | presidential   |
-|---:|:--------|:-----------|:------------|:-------|-------:|:------|:----------|:---------------|
-|  0 | 0.572   | 0.441      |             |        |  0.389 |       |           | 0.572          |
-|  1 | 0.827   |            |             |        |  0.562 |       |           |                |
-|  2 | 0.419   | 0.323      |             | 0.565  |  0.285 |       | 0.565     |                |
-|  3 |         | 0.419      |             |        |  0.37  | 0.626 |           | 0.544          |
-|  4 |         | 0.257      | 0.541       |        |  0.227 | 0.384 |           | 0.666          |
-|  5 |         | 0.798      |             | 0.349  |  0.176 | 0.298 | 0.349     |                |
-|  6 | 0.572   | 0.441      |             |        |  0.389 |       |           | 0.572          |
+document_id=-1 is the query
+|   document_id | about   | campaign   | candidate   | food   |   news | of    | organic   | presidential   |
+|--------------:|:--------|:-----------|:------------|:-------|-------:|:------|:----------|:---------------|
+|            -1 | 0.572   | 0.441      |             |        |  0.389 |       |           | 0.572          |
+|             0 | 0.827   |            |             |        |  0.562 |       |           |                |
+|             1 | 0.419   | 0.323      |             | 0.565  |  0.285 |       | 0.565     |                |
+|             2 |         | 0.419      |             |        |  0.37  | 0.626 |           | 0.544          |
+|             3 |         | 0.257      | 0.541       |        |  0.227 | 0.384 |           | 0.666          |
+|             4 |         | 0.798      |             | 0.349  |  0.176 | 0.298 | 0.349     |                |
+|             5 | 0.572   | 0.441      |             |        |  0.389 |       |           | 0.572          |
 
 RANKED
 |    |   doc_index | document                                                 |   weight |
