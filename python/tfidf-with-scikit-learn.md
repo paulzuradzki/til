@@ -1,4 +1,4 @@
-### Term-Frequency Inverted Document Frequency Search Implemented with `scikit-learn`
+### Term-Frequency Inverse Document Frequency Search Implemented with `scikit-learn`
 
 TF-IDF is implemented using the `scikit-learn` library's TfidfVectorizer and cosine_similarity utilities. 
 
