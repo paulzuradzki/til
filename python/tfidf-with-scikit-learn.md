@@ -64,8 +64,8 @@ print(scores_df.to_markdown())
 ```
 
 ### Displayed Output
-* We can see that document #6 has the closest match. Document #6 is a document that matches the query itself.
-* The next closest match is document #0.
+* We can see that document #5 has the closest match. Document #5 is a document that matches the query itself.
+* The next closest match is document #0 ("news about").
 
 ```
 query: news about presidential campaign
