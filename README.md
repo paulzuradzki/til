@@ -15,6 +15,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 
 ### Python
 - TODO: Use of environment variables to protect credentials
+- [TF-IDF and cosine similarity implementation with scikit-learn](python/tfidf-with-scikit-learn.md)
 - [Installing a package from Git repository, zip file, or PyPI](python/installing-package-from-git-repo.md)
 - [Adding to PYTHONPATH environment variable so Python can find modules](python/adding-to-pythonpath.md)
 - [Convert markdown to HTML using `markdown` library](python/convert-markdown-to-html.md)
