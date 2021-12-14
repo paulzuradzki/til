@@ -58,7 +58,9 @@ def make_quality_measure_data(n=10):
     df3 = df1.copy().assign(measure_name=[np.random.choice(measure_names) for n in range(n)])
     measure_data = pd.concat([df1, df2, df3])
     
-    return measure_data    
+    return measure_data
+    
+main()
     
 ```
 
