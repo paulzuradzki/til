@@ -15,6 +15,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 
 ### Python
 - TODO: Use of environment variables to protect credentials
+- [Get file owner on Windows](python/get-file-owner-on-windows.md)
 - [`Faker` for Mock Data](python/faker-for-mock-data.md)
 - [TF-IDF and cosine similarity implementation with scikit-learn](python/tfidf-with-scikit-learn.md)
 - [Installing a package from Git repository, zip file, or PyPI](python/installing-package-from-git-repo.md)
