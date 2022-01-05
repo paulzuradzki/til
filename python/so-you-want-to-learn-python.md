@@ -31,7 +31,11 @@ Tom Augspurger series (intermediate/advanced)
 * ["Modern Pandas"](https://tomaugspurger.github.io/modern-1-intro.html)
 
 ### More Computer Science and General Programming Languages
-[Harvard CS50](https://cs50.harvard.edu/). I started auditing CS50 by watching the lectures on long plane flights. This is a less direct route to learning Python per se because CS50 starts out in C and tours a bunch of other languages (including Python). I still highly recommend CS50 if you're coming from a non-traditional CS backround. It's very easy to go from C to Python due to easier syntax and how you get many utilities in Python for free (garbage collection, loose typing, etc). C is a small language and many other languages -- C++, Java, JavaScript -- borrow from C syntax (ex: curly braces, C-style loops, and type declarations). This means if you venture outside of Python, it's often easier to pick up those languages too after learning C.
+[Harvard CS50](https://cs50.harvard.edu/). 
+
+Harvard’s CS50 course is a gem. It’s a slow burn. The first half of CS50 starts in C. For most people, C won’t be the practical language of choice. It’s still an important language to learn and will pay longer term dividends in your understanding of memory management and data structures. The syntax translates smoothly to other C-style languages (C++, Java, C#, JavaScript). For example, the use of curly braces for code blocks, C-style loops, and type declarations are patterns that reoccur across languages you will likely encounter if you venture outside Python. I think this course is a great confidence-builder for your programming skills and broad understanding of how computers and the internet work.
+
+For “why C?”, you can read the instructor’s response here: [Answer to Why does CS50 at Harvard use C as its primary language? by David J. Malan](https://quorasessionswithdavidjmalan.quora.com/Why-does-CS50-at-Harvard-use-C-as-its-primary-language-1?ch=15&oid=20631502&share=1fc21675&srid=2S7W&target_type=answer)
 
 ### Other skils
 * Learn SQL
