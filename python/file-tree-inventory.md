@@ -48,3 +48,31 @@ def make_file_inventory(root_dir: Path, as_df=False):
     
     return inventory
 ```
+
+Example output of get_file_stats(path)
+```
+{'create_dt': '2022.01.06-1950',
+ 'is_dir': 1,
+ 'is_file': 0,
+ 'modified_dt': '2022.01.06-1950',
+ 'name': 'dir_01',
+ 'owner': 'domain/PZuradzki',
+ 'parent': WindowsPath('root'),
+ 'path': WindowsPath('root/dir_01'),
+ 'size_mb': 0.0039}
+```
+Example output of make_file_inventory(path)
+```
+| path                  | name      | parent      |   size_mb | modified_dt     | create_dt       | owner            |   is_file |   is_dir |
+|:----------------------|:----------|:------------|----------:|:----------------|:----------------|:-----------------|----------:|---------:|
+| root\dir_01           | dir_01    | root        |    0.0039 | 2022.01.06-1950 | 2022.01.06-1950 | domain/PZuradzki |         0 |        1 |
+| root\dir_01\subdir_01 | subdir_01 | root\dir_01 |    0      | 2022.01.06-1950 | 2022.01.06-1950 | domain/PZuradzki |         0 |        1 |
+| root\dir_01\subdir_02 | subdir_02 | root\dir_01 |    0      | 2022.01.06-1950 | 2022.01.06-1950 | domain/PZuradzki |         0 |        1 |
+| root\dir_01\subdir_03 | subdir_03 | root\dir_01 |    0      | 2022.01.06-1950 | 2022.01.06-1950 | domain/PZuradzki |         0 |        1 |
+| root\dir_02           | dir_02    | root        |    0.0039 | 2022.01.06-1950 | 2022.01.06-1950 | domain/PZuradzki |         0 |        1 |
+| root\dir_02\subdir_01 | subdir_01 | root\dir_02 |    0      | 2022.01.06-1950 | 2022.01.06-1950 | domain/PZuradzki |         0 |        1 |
+| root\dir_02\subdir_02 | subdir_02 | root\dir_02 |    0      | 2022.01.06-1950 | 2022.01.06-1950 | domain/PZuradzki |         0 |        1 |
+| root\dir_02\subdir_03 | subdir_03 | root\dir_02 |    0      | 2022.01.06-1950 | 2022.01.06-1950 | domain/PZuradzki |         0 |        1 |
+| root\dir_03           | dir_03    | root        |    0.0039 | 2022.01.06-1950 | 2022.01.06-1950 | domain/PZuradzki |         0 |        1 |
+| root\dir_03\subdir_01 | subdir_01 | root\dir_03 |    0      | 2022.01.06-1950 | 2022.01.06-1950 | domain/PZuradzki |         0 |        1 |
+```
