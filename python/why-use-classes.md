@@ -1,15 +1,18 @@
 ### Why use classes?
-1. Group related data structures and functions
-    * this also helps make the code mirror the problem / domain
+1. Enable you to group related data structures and functions
+    * helps make the code mirror the problem / domain
     * which helps to manage complexity and reason about the problem
-2. Code reuse and extensibility, e.g., extending other classes via inheritance
-3. Metaprograming - customize class instantiation, e.g., via rules and error-checking
+2. Encourage code reuse and extensibility, e.g., extending other classes via inheritance
+3. Metaprograming - we can customize class instantiation, e.g., via rules and error-checking
 
 ### When should I use classes?
-When you find yourself re-using shared data between logically related functions, classes might simplify your code.
-
-Citation:
-[In Praise of Metaclasses! by David Beazely via `USENIX ;login: series`](https://www.usenix.org/publications/login/winter2016/beazley)
+When you find yourself re-using shared data between logically related functions, classes might simplify your code. 
+* For example, below, we are passing the same configuration around to related functions. We can make this config accessible to other procedures while controlling its namespace.
+   * Using classes soley for a namespace is sometimes considered an antipattern in Python. Consider modules (.py file) and a simple data structures if a namespace is all you need.
+* What if we were passing around a data structure where we modify its state? A purely functional style can lead to unnecessary re-computation or awkard nested calls, we must read the code from right to left. 
+   * E.g., `do_foo(do_bar(do_yow(config)))`.
+   * For a more functional style, we might even consider piping operations using ["chained methods"](https://github.com/paulzuradzki/til/blob/master/python/method-chaining.md) 
+* Citation: [In Praise of Metaclasses! by David Beazely via `USENIX ;login: series`](https://www.usenix.org/publications/login/winter2016/beazley)
 
 ```
 # passing config looks a bit repetitive
