@@ -14,7 +14,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 ---
 
 ### Python
-- TODO: Use of environment variables to protect credentials
+- [Connecting and Posting Objects to AWS S3](python/aws-s3-demo.md)
 - [Catalog/inventory a file tree](python/file-tree-inventory.md)
 - [Get file owner on Windows](python/get-file-owner-on-windows.md)
 - [`Faker` for Mock Data](python/faker-for-mock-data.md)
@@ -58,6 +58,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - [Heron's Method for Square Roots](python/square_root.md)
 - [Traverse file tree recursively](python/traverse-files.md)
 - [Troubleshooting package installation SSL error on corporate firewall](python/package-install-ssl-error.md)
+- TODO: Use of environment variables to protect credentials
 - TODO: xlwings - read & write with Excel; split & merge sheets and workbooks
 - TODO: matplotlib - subplots
 - TODO: pandas pivoting methods and "named aggregations"
