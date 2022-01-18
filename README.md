@@ -14,6 +14,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 ---
 
 ### Python
+- [How to share Jupyter Notebooks: gists, nbviewer, binder](python/how-to-share-jupyter-notebooks.md)
 - [Connecting and Posting Objects to AWS S3](python/aws-s3-demo.md)
 - [Catalog/inventory a file tree](python/file-tree-inventory.md)
 - [Get file owner on Windows](python/get-file-owner-on-windows.md)
