@@ -5,11 +5,11 @@ Here I log things I learn or code snippets that I keep forgetting.
 * [Python](#python)
 * [SAS](#sas)
 * [SQL](#sql)
-* [C](#C)
-* [Linux](#Linux)
-* [Editors](#Editors)
-* [Resources](#Resources)
-* [Healthcare](#Healthcare)
+* [C](#c)
+* [Linux](#linux)
+* [Editors](#editors)
+* [Resources](#resources)
+* [Healthcare](#healthcare)
 
 ---
 
@@ -75,6 +75,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - TODO: add steps for PyPi prep; modifying setup.py, sdist and bdist_wheel; twine upload to test, etc.
 
 ### SAS
+- [Configuring SASPy for Windows](sas/configuring-saspy.md)
 - [SAS Loops](sas/sas-loops.md)
 - [Expand date spans to year-month view](sas/expand-dates.md)
 - [Comparing terminology for similar concepts in Python and SAS](sas/sas-vs-python-semantics.md)
