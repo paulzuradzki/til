@@ -35,7 +35,6 @@ $ python -m pip install --trusted-host pypi.python.org --trusted-host files.pyth
 
 Using conda:
 ```bash
-```bash
 # temporarily skip ssl verification if running into firewall errors
 # install saspy
 # reset ssl_verification to 'yes' when you are done (safer)
