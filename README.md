@@ -120,3 +120,4 @@ Here I log things I learn or code snippets that I keep forgetting.
 
 ### Healthcare
 * [CMS Risk Adjustment Files](healthcare/cms-risk-adjustment-files.md)
+* [Implementing HEDIS Continuous Enrollment Requirements](healthcare/hedis_continuous_enrollment_reqs.md)
