@@ -74,6 +74,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 - TODO: threading, thread pool, locks, and parallel loops
 - TODO: async demo with timer/simulated SQL (long query)
 - TODO: add steps for PyPi prep; modifying setup.py, sdist and bdist_wheel; twine upload to test, etc.
+- TODO: using pandas dataframe index for faster lookups and filtering
 
 ### SAS
 - [Configuring SASPy for Windows](sas/configuring-saspy.md)
