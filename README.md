@@ -14,6 +14,7 @@ Here I log things I learn or code snippets that I keep forgetting.
 ---
 
 ### Python
+- [Pandas read_csv() from a file in ZIP URL](python/pandas_read_from_file_in_url_zip.md)
 - [Multithreading - running asynchronous steps that wait for other events to complete](python/multithreading-wait-for-event.md)
 - [How to share Jupyter Notebooks: gists, nbviewer, binder](python/how-to-share-jupyter-notebooks.md)
 - [Connecting and Posting Objects to AWS S3](python/aws-s3-demo.md)
