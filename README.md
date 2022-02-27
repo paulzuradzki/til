@@ -1,5 +1,7 @@
 # Today I Learned (TIL)
-Here I log things I learn or code snippets that I keep forgetting.
+I log things that I learn or code snippets that I keep forgetting in this TIL collection.
+
+This log also doubles as a lazy tech "blog". While I am the primary audience, I hope learning in public can offer utility to others.
 
 ### Categories
 * [Python](#python)
