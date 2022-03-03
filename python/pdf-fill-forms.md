@@ -11,10 +11,10 @@ Source: https://github.com/mstamy2/PyPDF2/issues/355
 from pprint import pprint
 import os
 from PyPDF2 import PdfFileReader, PdfFileWriter
-from PyPDF2.generic import BooleanObject, NameObject, IndirectObject
+from PyPDF2.generic import BooleanObject, NameObject, IndirectObject, NumberObject
 from typing import Dict
 
-def fill_form(source_filepath, destination_filepath, field_data: Dict):
+def fill_form(source_filepath=None, destination_filepath=None, field_data:Dict=None):
     """
     Fills PDF form template with template to new file. Template PDF must have fields pre-defined.
     
@@ -40,6 +40,18 @@ def fill_form(source_filepath, destination_filepath, field_data: Dict):
     # fill fields
     filled_pdf.updatePageFormFieldValues(page=filled_pdf.getPage(0), fields=field_data)
 
+    # make fields read-only
+        # change the Bit Position of the Editable Form Fields to 1 to make them ReadOnly
+        # https://stackoverflow.com/questions/54997657/python-pdf-form-flattening/55302328#55302328
+        # https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf
+    for j in range(0, len(filled_pdf.getPage(0)['/Annots'])):
+        writer_annot = filled_pdf.getPage(0)['/Annots'][j].getObject()
+        for field in field_data: 
+            if writer_annot.get('/T') == field:
+                writer_annot.update({
+                    NameObject("/Ff"): NumberObject(1)   # make ReadOnly
+                })
+
     # write out file
     with open(destination_filepath, 'wb') as f:
         filled_pdf.write(f)
@@ -60,7 +72,6 @@ def _set_need_appearances_writer(writer: PdfFileWriter):
     except Exception as e:
         print('set_need_appearances_writer() catch : ', repr(e))
         return writer
-
 
 # get field names from template form (if not known in advance)
 # designer with Acrobat can also view these
