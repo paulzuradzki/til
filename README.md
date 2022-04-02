@@ -12,6 +12,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 * [Editors](#editors)
 * [Resources](#resources)
 * [Healthcare](#healthcare)
+* [Other](#other)
 
 ---
 
@@ -126,3 +127,6 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 ### Healthcare
 * [CMS Risk Adjustment Files](healthcare/cms-risk-adjustment-files.md)
 * [Implementing HEDIS Continuous Enrollment Requirements](healthcare/hedis_continuous_enrollment_reqs.md)
+
+### Other
+* [Make diagrams from markdown-like text with Mermaid](other/diagrams_with_mermaid.md)
