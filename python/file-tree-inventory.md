@@ -1,4 +1,4 @@
-Utilies for gathering metadata on files and file trees.
+Utilities for gathering metadata on files and file trees.
 
 ```python
 from datetime import datetime
