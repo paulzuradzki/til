@@ -11,6 +11,10 @@
     # "java.home": "C:\\Program Files\\AdoptOpenJDK\\jdk-8.0.232.09-hotspot"
 
 {
+
+    // prevent folders from expanding when opening new file
+    "explorer.autoReveal": false,
+
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "java.home": "C:\\Users\\pzuradzki\\Downloads\\amazon-corretto-11.0.8.10.1-windows-x64-jdk\\jdk11.0.8_10",
