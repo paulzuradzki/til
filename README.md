@@ -81,6 +81,9 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - TODO: add steps for PyPi prep; modifying setup.py, sdist and bdist_wheel; twine upload to test, etc.
 - TODO: using pandas dataframe index for faster lookups and filtering
 
+### Statistics
+* [Simple Linear Regression with Python `statsmodels` vs R lm() function](statistics/slr-with-python-vs-r.md)
+
 ### SAS
 - [Configuring SASPy for Windows](sas/configuring-saspy.md)
 - [SAS Loops](sas/sas-loops.md)
