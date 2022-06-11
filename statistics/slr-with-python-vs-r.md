@@ -1,4 +1,4 @@
-## Simple Linear Regression with Python `statsmodels` vs R lm() function
+## Simple Linear Regression with Python `statsmodels` vs R `lm()` function
 
 
 ### Python
