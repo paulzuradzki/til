@@ -5,6 +5,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 
 ### Categories
 * [Python](#python)
+* [Statistics](#statistics)
 * [SAS](#sas)
 * [SQL](#sql)
 * [C](#c)
@@ -82,7 +83,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - TODO: using pandas dataframe index for faster lookups and filtering
 
 ### Statistics
-* [Simple Linear Regression with Python `statsmodels` vs R lm() function](statistics/slr-with-python-vs-r.md)
+* [Simple Linear Regression with Python `statsmodels` vs R `lm()` function](statistics/slr-with-python-vs-r.md)
 
 ### SAS
 - [Configuring SASPy for Windows](sas/configuring-saspy.md)
