@@ -5,6 +5,7 @@
 
 ```python
 import statsmodels.api as sm
+import statsmodels.formula.api as smf
 
 cars = sm.datasets.get_rdataset(dataname="cars", package="datasets")
 cars_df = cars.data
