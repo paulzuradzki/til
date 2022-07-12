@@ -81,6 +81,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - TODO: async demo with timer/simulated SQL (long query)
 - TODO: add steps for PyPi prep; modifying setup.py, sdist and bdist_wheel; twine upload to test, etc.
 - TODO: using pandas dataframe index for faster lookups and filtering
+- TODO: include data files in packages with `pkgutil.get_data(package, resource)`
 
 ### Statistics
 * [Simple Linear Regression with Python `statsmodels` vs R `lm()` function](statistics/slr-with-python-vs-r.md)
