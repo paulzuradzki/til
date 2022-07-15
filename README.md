@@ -65,6 +65,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [pandas - miscellaneous](python/pandas-misc.md)
 - [Heron's Method for Square Roots](python/square_root.md)
 - [Traverse file tree recursively](python/traverse-files.md)
+- [Python Custom Logical Sort with `sorted(iterable, key)`](python/python-custom-sort.md)
 - [Troubleshooting package installation SSL error on corporate firewall](python/package-install-ssl-error.md)
 - TODO: Use of environment variables to protect credentials
 - TODO: xlwings - read & write with Excel; split & merge sheets and workbooks
