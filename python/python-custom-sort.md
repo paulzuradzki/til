@@ -25,3 +25,10 @@ Output
 ['High', 'High', 'High', 'High', 'High', 'High', 'High', 'High', 'High', 'High', 'Low', 'Low', 'Medium', 'Medium', 'Medium', 'Medium', 'Medium', 'Medium', 'Medium', 'Medium']
 ['Low', 'Low', 'Medium', 'Medium', 'Medium', 'Medium', 'Medium', 'Medium', 'Medium', 'Medium', 'High', 'High', 'High', 'High', 'High', 'High', 'High', 'High', 'High', 'High']
 ```
+
+# Resources
+
+[Reuven Lerner - How to sort anything](https://www.youtube.com/watch?v=Z3c2LvEJeu0)
+* covers use of operator.itemgetter()
+* OOP gt/lt methods
+* dataclasses with order=True and order of attribute inits
