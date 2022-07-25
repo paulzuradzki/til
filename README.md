@@ -10,6 +10,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 * [SQL](#sql)
 * [C](#c)
 * [Linux](#linux)
+* [Git](#git)
 * [Editors](#editors)
 * [Resources](#resources)
 * [Healthcare](#healthcare)
@@ -112,6 +113,9 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [nginx sample web server config](linux/nginx-web-server-config.md)
 - [Check processes](linux/check-processes.md)
 - [Check listening ports](linux/check-listening-ports.md)
+
+### Git
+- [show list of files with diffs since latest commit](git/show-latest-diffs.md)
 
 ### Editors
 - [VS Code - configuration for Anaconda prompt](editors/vs-code/settings-json.md)
