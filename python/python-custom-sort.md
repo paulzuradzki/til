@@ -16,7 +16,10 @@ sorted(data, key=lambda value: sort_order.index(value))
 
 # Resources
 
-[Reuven Lerner - How to sort anything](https://www.youtube.com/watch?v=Z3c2LvEJeu0)
-* covers use of operator.itemgetter()
-* OOP gt/lt methods
-* dataclasses with order=True and order of attribute inits
+* [Reuven Lerner - How to sort anything](https://www.youtube.com/watch?v=Z3c2LvEJeu0)
+  * covers use of operator.itemgetter()
+  * OOP gt/lt methods
+  * dataclasses with order=True and order of attribute inits
+* via pandas
+  * `pandas.Series.cat.reorder_categories(['Low', 'Medium', 'High'], ordered=True)`
+  * [pandas.Series.cat.reorder_categories](https://pandas.pydata.org/docs/reference/api/pandas.Series.cat.reorder_categories.html)
