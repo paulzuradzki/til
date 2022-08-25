@@ -113,7 +113,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [nginx sample web server config](linux/nginx-web-server-config.md)
 - [Check processes](linux/check-processes.md)
 - [Check listening ports](linux/check-listening-ports.md)
-
+- [`nohup` - No Signal Hangup to run processes in background](linux/nohup.md)
 ### Git
 - [show list of files with diffs since latest commit](git/show-latest-diffs.md)
 
