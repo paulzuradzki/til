@@ -114,6 +114,8 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [Check processes](linux/check-processes.md)
 - [Check listening ports](linux/check-listening-ports.md)
 - [`nohup` - No Signal Hangup to run processes in background](linux/nohup.md)
+- [Inspect and persist memory usage statistics with `vmstat`](linux/inspect_memory_usage.md)
+
 ### Git
 - [show list of files with diffs since latest commit](git/show-latest-diffs.md)
 
