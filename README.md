@@ -118,7 +118,8 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [Inspect and persist memory usage statistics with `vmstat`](linux/inspect_memory_usage.md)
 
 ### Git
-- [show list of files with diffs since latest commit](git/show-latest-diffs.md)
+- [Show list of files with diffs since latest commit](git/show-latest-diffs.md)
+- [Git snippets](git/git_snippets.md)
 
 ### Editors
 - [VS Code - configuration for Anaconda prompt](editors/vs-code/settings-json.md)
