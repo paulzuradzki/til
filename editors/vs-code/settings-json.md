@@ -30,6 +30,13 @@
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe", 
     "terminal.integrated.shellArgs.windows": ["/K", "C:\\Users\\pzuradzki\\AppData\\Local\\Continuum\\miniconda3\\Scripts\\activate.bat C:\\Users\\pzuradzki\\AppData\\Local\\Continuum\\miniconda3 & conda activate dev"],
     "python.pythonPath": "C:\\Users\\pzuradzki\\AppData\\Local\\Continuum\\miniconda3\\envs\\dev\\python.exe",
-    "python.autoComplete.extraPaths": []
+    "python.autoComplete.extraPaths": [],
+    
+    // don't show __pycache__ files created by Python
+    "files.exclude": {
+        "**/*.pyc": {"when": "$(basename).py"},
+        "**/__pycache__": true,
+        }    
+    
 }
 ```
