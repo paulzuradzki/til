@@ -12,4 +12,7 @@ git log --oneline --graph --abbrev-commit
 # concise log
 git log --oneline
 
+# show differences between the remote main branch and current head
+# helps ID which commits are causing "your branch is ahead by N commits" in `git status`
+git log origin/main..HEAD --oneline
 ```
