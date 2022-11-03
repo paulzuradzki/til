@@ -70,7 +70,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [Troubleshooting package installation SSL error on corporate firewall](python/package-install-ssl-error.md)
 - [Neatly print a collection using using f-string padding and alignment or `tabulate`](python/format_strings_alignment_and_padding.md)
 - [pandas - value counts with percentages snippet](python/pandas_value_counts_with_percent.md)
-- [pandas - read multiple sheets from Excel](pandas-read-multiple-sheets-from-excel.md)
+- [pandas - read multiple sheets from Excel](python/pandas-read-multiple-sheets-from-excel.md)
 
 TODO
 - TODO: Use of environment variables to protect credentials
