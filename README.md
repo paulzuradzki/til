@@ -5,7 +5,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 
 ### Categories
 * [Python](#python)
-* [Statistics](#statistics)
+* [Statistics and Machine Learning](#statistics-and-ml)
 * [SAS](#sas)
 * [SQL](#sql)
 * [C](#c)
@@ -90,8 +90,12 @@ TODO
 - TODO: using pandas dataframe index for faster lookups and filtering
 - TODO: include data files in packages with `pkgutil.get_data(package, resource)`
 
-### Statistics
-* [Simple Linear Regression with Python `statsmodels` vs R `lm()` function](statistics/slr-with-python-vs-r.md)
+### Statistics & Machine Learning
+* [Simple Linear Regression with Python `statsmodels` vs R `lm()` function](statistics-and-ml/slr-with-python-vs-r.md)
+* [Linear Model Gotchas with Python vs R](statistics-and-ml/linear-model-gotchas-python-vs-r.md)
+* TODO: scikit-learn pipelines
+* TODO: scikit-learn column tranformers; feature unions of categorical and numeric
+* TODO: scikit-learn subclassing and custom transformers
 
 ### SAS
 - [Configuring SASPy for Windows](sas/configuring-saspy.md)
