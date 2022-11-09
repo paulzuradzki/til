@@ -71,6 +71,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [Neatly print a collection using using f-string padding and alignment or `tabulate`](python/format_strings_alignment_and_padding.md)
 - [pandas - value counts with percentages snippet](python/pandas_value_counts_with_percent.md)
 - [pandas - read multiple sheets from Excel](python/pandas-read-multiple-sheets-from-excel.md)
+- [Logging Format Snippet](python/logging-format-snippet.md)
 
 TODO
 - TODO: Use of environment variables to protect credentials
