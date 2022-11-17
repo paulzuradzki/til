@@ -72,6 +72,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [pandas - value counts with percentages snippet](python/pandas_value_counts_with_percent.md)
 - [pandas - read multiple sheets from Excel](python/pandas-read-multiple-sheets-from-excel.md)
 - [Logging Format Snippet](python/logging-format-snippet.md)
+- [LRU Cache decorator](python/lru_cache_demo.ipynb)
 
 TODO
 - TODO: Use of environment variables to protect credentials
