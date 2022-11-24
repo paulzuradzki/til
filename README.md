@@ -98,8 +98,10 @@ TODO
 * [Linear Model Gotchas with Python vs R](statistics-and-ml/linear-model-gotchas-python-vs-r.md)
 * TODO: scikit-learn pipelines
 * TODO: scikit-learn column tranformers; feature unions of categorical and numeric
-* TODO: scikit-learn subclassing and custom transformers
-
+* TODO: scikit-learn subclassing and custom transformers (e.g., fasttext text classifier; customer transformations)
+* TODO: compare linear regression in statsmodels vs scikit-learn
+* TODO: compare fasttext vs scikit-learn for text classification
+ 
 ### SAS
 - [Configuring SASPy for Windows](sas/configuring-saspy.md)
 - [SAS Loops](sas/sas-loops.md)
