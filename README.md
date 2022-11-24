@@ -5,7 +5,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 
 ### Categories
 * [Python](#python)
-* [Statistics and Machine Learning](#statistics-and-ml)
+* [Statistics and Machine Learning](#statistics-and-machine-learning)
 * [SAS](#sas)
 * [SQL](#sql)
 * [C](#c)
@@ -73,6 +73,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [pandas - read multiple sheets from Excel](python/pandas-read-multiple-sheets-from-excel.md)
 - [Logging Format Snippet](python/logging-format-snippet.md)
 - [LRU Cache decorator](python/lru_cache_demo.ipynb)
+- [Set up IPython kernel for VS Code Jupyter Notebook support with a virtual environment](python/setup_ipython_kernel_for_vs_code.md)
 
 TODO
 - TODO: Use of environment variables to protect credentials
@@ -92,7 +93,7 @@ TODO
 - TODO: using pandas dataframe index for faster lookups and filtering
 - TODO: include data files in packages with `pkgutil.get_data(package, resource)`
 
-### Statistics & Machine Learning
+### Statistics and Machine Learning
 * [Simple Linear Regression with Python `statsmodels` vs R `lm()` function](statistics-and-ml/slr-with-python-vs-r.md)
 * [Linear Model Gotchas with Python vs R](statistics-and-ml/linear-model-gotchas-python-vs-r.md)
 * TODO: scikit-learn pipelines
