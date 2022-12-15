@@ -100,7 +100,7 @@ TODO
 * TODO: scikit-learn column tranformers; feature unions of categorical and numeric
 * TODO: scikit-learn subclassing and custom transformers (e.g., fasttext text classifier; customer transformations)
 * TODO: compare linear regression in statsmodels vs scikit-learn
-* TODO: compare fasttext vs scikit-learn for text classification
+* TODO: compare FastText vs scikit-learn vs SpaCy for text classification
  
 ### SAS
 - [Configuring SASPy for Windows](sas/configuring-saspy.md)
