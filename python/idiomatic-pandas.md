@@ -1,3 +1,6 @@
+References:
+* I don't have/remember the link but this example is from one of Matt Harrison's talks (should be on YouTube); author of Effective Pandas
+
 ```python
 """pandas tricks
 * chaining and pipe for readability
