@@ -129,6 +129,7 @@ TODO
 - [Check listening ports](linux/check-listening-ports.md)
 - [`nohup` - No Signal Hangup to run processes in background](linux/nohup.md)
 - [Inspect and persist memory usage statistics with `vmstat`](linux/inspect_memory_usage.md)
+- [Use grep to search for source files with lines containing words that match a pattern](linux/grep-search-for-source-files-with-lines-matching-pattern.md)
 
 ### Git
 - [Show list of files with diffs since latest commit](git/show-latest-diffs.md)
