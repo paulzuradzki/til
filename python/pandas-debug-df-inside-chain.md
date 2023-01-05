@@ -32,3 +32,4 @@ iris_df
 
 * The advantage of this approach is that you do not have to re-write the method chain and create new assignments outside the chain. 
 * The pipe() line is easy to include or comment out.
+* Above, you can debug multiple intermediate transformations by inspecting `df_debug_1` and `df_debug_2`.
