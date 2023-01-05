@@ -1,6 +1,6 @@
 # Problem
 
-I want to inspect a pandas dataframe during intermediate steps of method chain for debugging.
+I want to inspect a pandas dataframe during intermediate steps of a method chain for debugging.
 
 # Solution
 Use pipe() and save intermediate dataframe to global variable for inspection later.
