@@ -75,6 +75,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [LRU Cache decorator](python/lru_cache_demo.ipynb)
 - [Set up IPython kernel for VS Code Jupyter Notebook support with a virtual environment](python/setup_ipython_kernel_for_vs_code.md)
 - [pandas - display dataframe without index](python/pandas-display-without-index.md)
+- [pandas - debug dataframe inside method chain](python/pandas-debug-df-inside-chain.md)
 
 TODO
 - TODO: Use of environment variables to protect credentials
