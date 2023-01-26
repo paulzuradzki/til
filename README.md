@@ -46,7 +46,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [pandas - Display HTML representation of multiple dataframes](python/display-html-repr-jupyter.md)
 - [Fast load to MSSQL / SQL Server from Python client](python/fast-load-to-sql-server.md)
 - [Send Outlook emails with Win COM](python/send-outlook-emails-with-win-com.md)
-- [Install packages from jupyter](python/install-packages-from-jupyter.md)
+- [Install packages from jupyter with pip or conda](python/install-packages-from-jupyter.md)
 - [Process large data sets by chunk in pandas](python/pandas-process-data-by-chunk.md)
 - [pandas - Idiomatic Pandas: chaining, piping, inspecting and assigning intermediate dataframes](python/idiomatic-pandas.md)
 - [pandas - Summarize Frequency Counts with Percentages by Column](python/pandas-show-frequency-counts-with-percent.md)
