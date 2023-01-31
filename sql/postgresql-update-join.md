@@ -1,9 +1,13 @@
-# PostgreSQL Update Join
+# PostgreSQL Update and Delete Join
 
 ## Problem
 
-* I want to update a table using an inner join to another reference table so I can update to values from that reference table or limit the values to update based on the reference table.
-* This also avoids the need from constructing separate UPDATE statements
+* I want to update and/or delete certain records from a table 
+* ...using an inner join to another reference table, so I can 
+  * update to values from that reference table, 
+  * limit the values to update, and/or 
+  * delete values based on that reference table
+* this also avoids the need to construct separate UPDATE or DELETE statements using a template
 
 
 E.g., two tables, `data_all` and `id_filter`:
@@ -34,6 +38,12 @@ E.g., two tables, `data_all` and `id_filter`:
 |    4 |          |
 |    5 |          |
 
+`data_all` after delete join
+|   id | status   |
+|-----:|:---------|
+|    1 |          |
+|    4 |          |
+|    5 |          |
 
 Do NOT do this:
 * this will update all values in data_all to 'foo'
@@ -67,7 +77,6 @@ insert into data_all values
 (5, '')
 ;
 
-
 -- inner join table on which keys will be used to filter 'data_all'
 drop table if exists id_filter;
 create temp table id_filter (id int);
@@ -75,6 +84,8 @@ insert into id_filter values
 (2),
 (3)
 ;
+
+/* UPDATE step */
 
 /* OPTION A */
 update data_all t1
@@ -97,7 +108,6 @@ set status = 'foo'
 from filter_ids t2
 where t1.id = t2.id;
 
-
 /*
 RESULTS
 * resulting table after update-join
@@ -113,4 +123,38 @@ RESULTS
     |    5 |          |
 
 */
+
+/* DELETE step */ 
+
+/* OPTION A */
+delete 
+from data_all a
+using id_filter b
+where a.id = b.id
+;
+
+/* OPTION B */
+delete
+from data_all a
+where exists (
+    select b.id 
+    from id_filter b 
+    where a.id = b.id
+)
+;
+
+/*
+RESULTS
+* resulting table after delete step
+
+  select * from data_all order by id; 
+  
+    |   id | status   |
+    |-----:|:---------|
+    |    1 |          |
+    |    4 |          |
+    |    5 |          |
+
+*/
+
 ```
