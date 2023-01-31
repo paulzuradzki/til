@@ -118,7 +118,7 @@ TODO
 - [Connect to MS SQL Server with `pyodbc`](sql/sql-server-pyodbc-connection.md)
 - [PostgeSQL connection from Python](sql/postgres-connect-with-python.md)
 - [PostgreSQL fast bulk load via `copy from`](sql/fast-bulk-copy-postgres.md)
-- [PostgreSQL update join](sql/postgresql-update-join.md)
+- [PostgreSQL update join](sql/postgresql-update-delete-join.md)
 - TODO: pivot, unpivot
 
 ### C
