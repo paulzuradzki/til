@@ -1,30 +1,59 @@
-# Problem
+# PostgreSQL Update Join
+
+## Problem
 
 * I want to update a table using an inner join to another reference table so I can update to values from that reference table or limit the values to update based on the reference table.
 * This also avoids the need from constructing separate UPDATE statements
 
-# Solution
-* Different SQL dialects seem to have varying support for update joins
-* In PostgreSQL, you need to carefully restrict your data using WHERE criteria, the table specified in the UPDATE line, and the FROM table
-  * additional tables can be joined in the FROM clause
+
+E.g., two tables, `data_all` and `id_filter`:
+
+`data_all` before update
+|   id | status   |
+|-----:|:---------|
+|    1 |          |
+|    2 |          |
+|    3 |          |
+|    4 |          |
+|    5 |          |
+
+
+`id_filter`
+|   id |
+|-----:|
+|    2 |
+|    3 |
+
+
+`data_all` after update join
+|   id | status   |
+|-----:|:---------|
+|    1 |          |
+|    2 | foo      |
+|    3 | foo      |
+|    4 |          |
+|    5 |          |
+
+
+Do NOT do this:
+* this will update all values in data_all to 'foo'
+* rather than filtering to only values that are in the 'id_filter' table
 
 ```sql
-/*
+-- DO NOT DO THIS
+update data_all
+set status = 'foo'
+from data_all t1, id_filter t2
+where t1.id = t2.id;
+```
 
-UPDATE JOIN - DEMO (for postgreSQL)
+## Solution
+* different SQL dialects seem to have varying support for update joins
+* in PostgreSQL, you need to carefully restrict your data using WHERE criteria, the table specified in the UPDATE line, and the FROM table
+* additional tables can be joined in the FROM clause
 
-
-DO NOT DO THIS:
-    * this will update all values in data_all to 'foo'
-    * rather than filtering to only values that are in the 'id_filter' table
-
-    update data_all
-    set status = 'foo'
-    from data_all t1, id_filter t2
-    where t1.id = t2.id;
-
-*/
-
+```sql
+/* UPDATE JOIN - DEMO (for postgreSQL) */
 
 /* setup */
 -- table that we will update
@@ -46,28 +75,6 @@ insert into id_filter values
 (2),
 (3)
 ;
-
-
-/*
- select * from data_all; 
- 
-    |   id | status   |
-    |-----:|:---------|
-    |    1 |          |
-    |    2 |          |
-    |    3 |          |
-    |    4 |          |
-    |    5 |          |
-    
-select * from id_filter; 
-
-    |   id |
-    |-----:|
-    |    2 |
-    |    3 |
-    
-*/
-
 
 /* OPTION A */
 update data_all t1
