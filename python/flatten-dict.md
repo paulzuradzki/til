@@ -1,3 +1,29 @@
+# Example 1
+
+```python
+from typing import Dict, List, Union
+
+def flatten(data: List[Union[Dict, List]]) -> List[Dict]:
+    """Flatten nested lists of dictionary to single list of dictionaries.
+    
+    Dictionaries in sub-lists/JSON arrays will be moved to the outer level.
+    
+    Usage
+    -----
+    >>> data = [{1: 'one', 2: 'two'}, 
+                [{3: 'three', 4: 'four'}, {5: 'five', 6: 'six'}], 
+               ]       
+    >>> [item for item in flatten(data)]    # -> [{1: 'one', 2: 'two'}, {3: 'three', 4: 'four'}, {5: 'five', 6: 'six'}]
+    """
+    
+    for item in data:
+        if isinstance(item, dict):
+            yield item
+        elif isinstance(item, list):
+            yield from flatten(item)
+```
+
+# Example 2
 Source: https://stackoverflow.com/a/6027615
 
 ```python
