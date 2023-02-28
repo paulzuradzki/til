@@ -17,7 +17,7 @@ import dotenv
 import pandas as pd
 
 # load from .env file and over-ride any existing variables
-dotenv.load_dotenv('../.env', override=True)
+dotenv.load_dotenv('./.env', override=True)
 
 bucket_name = ''
 object_key = ''
