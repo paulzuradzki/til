@@ -1,12 +1,13 @@
 ## Problem
-AWS and Pandas: reading a CSV object from a private S3 bucket
+AWS and Pandas: reading a CSV object directly from a private S3 bucket
 * `pandas.read_csv()` can read directly from a public URL like `pd.read_csv('s3://path/to/table.csv')`
 * this does not work for a private S3 bucket
 
 ## Solution
 * use boto3 to get a response from the S3 service client
-* the 'Body' key contains a StreamingBody/file-like object that you can now pass to `pd.read_csv()`
+  * the 'Body' key contains a StreamingBody/file-like object that you can now pass to `pd.read_csv()`
 * supply your own `.env` file, `bucket_name`, and `object_key` to reproduce the example
+* note: once the file object is consumed by `pd.read_csv()`, the file object will not be available in subsequent calls
 
 ```python
 import os
