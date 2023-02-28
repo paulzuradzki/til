@@ -77,6 +77,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [pandas - display dataframe without index](python/pandas-display-without-index.md)
 - [pandas - debug dataframe inside method chain](python/pandas-debug-df-inside-chain.md)
 - [regex - split on delimiters and handle escape characters](python/regex-split-on-delimiters.md)
+- [AWS and pandas - read a CSV object from a private S3 bucket](python/aws-s3-pandas-read-csv-from-private-bucket.md)
 
 TODO
 - TODO: Use of environment variables to protect credentials
