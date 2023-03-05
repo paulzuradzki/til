@@ -10,6 +10,7 @@ import logging
 from pathlib import Path
 from datetime import datetime
 
+Path('.logs').mkdir(exist_ok=True)
 dt = datetime.now().strftime('%Y%m%d-%H%M%S')
 module_name = Path(__file__).name.replace('.py', '')
 logging.basicConfig(
