@@ -116,6 +116,7 @@ TODO
 - [Export SAS to Excel example](sas/export-sas-to-excel.md)
 
 ### SQL
+- [psycopg2 connectiona and cursor commit behavior for PostgreSQL](sql/postgres-commit-behavior.md)
 - [Programmatically generating SQL with Jinja Templates](sql/jinja_sql_demo.ipynb)
 - [Connect to MS SQL Server with `pyodbc`](sql/sql-server-pyodbc-connection.md)
 - [PostgeSQL connection from Python](sql/postgres-connect-with-python.md)
