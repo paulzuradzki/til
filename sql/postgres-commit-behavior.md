@@ -1,4 +1,4 @@
-# psycopg2 connectiona and cursor commit behavior for PostgreSQL
+# psycopg2 connection and cursor commit behavior for PostgreSQL
 
 ### Problem
 * I forget when I have to explicitly `commit` transactions for SQL actions that must persist using `psycopg2` (Python driver for postgres).
