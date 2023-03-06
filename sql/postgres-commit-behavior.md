@@ -1,8 +1,10 @@
-# Problem
+# psycopg2 connectiona and cursor commit behavior for PostgreSQL
+
+### Problem
 * I forget when I have to explicitly `commit` transactions for SQL actions that must persist using `psycopg2` (Python driver for postgres).
 * You can use both `psycopg2.connection` and `psycopg2.cursor` classes as context managers, so it's easy to forget which one takes care of commits vs. closing a cursor or connection.
 
-# Solution
+### Solution
 * Here is a script demonstrating the usage of the `psycopg2.connection` class with and without a context manager (with-block)
   * We still use a context manager on the `psycopg2.cursor` in both `CREATE TABLE` examples
 * Only the psycopg2.connection class automatically commits when using a with-block (context manager).
