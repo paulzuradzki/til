@@ -1,6 +1,6 @@
 # Problem
 
-A leading `*` followed by keyword arguments in your function definition will disallow usage of positional arguments. However, now you have a separate problem if you did not intend for the named arguments to be optional.
+A leading `*` followed by keyword arguments in your function definition will disallow usage of positional arguments if you want to enforce usage of keyword arguments (e.g., more explicit). However, now you have a separate problem if you did not intend for the supplied named arguments to be optional and introduce a bug when the default value is used.
 
 # Solution
 
