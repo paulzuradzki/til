@@ -1,7 +1,8 @@
 # Design Patterns: Factory Method / Virtual Constructor
 
+Main idea: the Factory pattern separates creation of a class from its use. The Factory constructor is used to return one of multiple objects that implements some common interface.
+
 Notes
-* The Factory constructor can return one of multiple objects that implements some common interface
 * Using this pattern, you do not instantiate subclasses directly. The Factory does it.
 * For example, below, we instantiate DBFactory() and call its `.make_db()` method; but the class that is returned (as `db`) is actually different in 1 of the 3 initializations. 
   * Depending on the `config` that is passed, we either instantiate a `PostgresDB` or `SQLiteDB` class.
