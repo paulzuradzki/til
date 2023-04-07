@@ -142,6 +142,7 @@ TODO
 ### Git
 - [Show list of files with diffs since latest commit](git/show-latest-diffs.md)
 - [Git snippets](git/git_snippets.md)
+- [.gitignore snippet](git/gitignore-snippet.md)
 
 ### Editors
 - [VS Code - configuration for Anaconda prompt](editors/vs-code/settings-json.md)
