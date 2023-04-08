@@ -5,14 +5,9 @@
 # Solution
 * Use `MANIFEST.in` file [directives](https://packaging.python.org/en/latest/guides/using-manifest-in/#manifest-in-commands) to specify non-Python files to include in the source distribution
 * Use `setup.cfg` file `include_package_data=True` directive to specify that non-Python files in the source distribution should also be included in the binary distribution
-* Use the `pkg_resources` module that comes with `setuptools`
-  * Instead of passing a file path to something like the `open()` function, you pass: `pkg_resources.resource_filename('package_name', 'relative_path_to_file.txt')`
-  * You can install `setuptools` manually with `pip`, but it should be a build pre-requisite in `pyproject.toml`.
-
-```
-# https://setuptools.pypa.io/en/latest/pkg_resources.html
-Use of pkg_resources is deprecated in favor of importlib.resources, importlib.metadata and their backports (importlib_resources, importlib_metadata). Users should refrain from new usage of pkg_resources and should work to port to importlib-based solutions.
-```
+* Use importlib.resources.read_text('package_name', 'file.txt')
+  * instead of passing a file path to something like the `open()` function, 
+  * you pass the string result of the function above
 
 Sample `pyproject.toml`
 ```bash
@@ -57,6 +52,16 @@ exclude =
 
 
 Example usage of non-Python data within your package:
+
+Using `importlib`
+```python
+import importlib.resources
+
+# get the contents of a file in a package
+contents = importlib.resources.read_text('package_name', 'file.txt')
+```
+
+Deprecated approach with `pkg_resources`
 ```python
 import pkg_resources
 
