@@ -80,6 +80,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [AWS and pandas - read a CSV object from a private S3 bucket](python/aws-s3-pandas-read-csv-from-private-bucket.md)
 - [Behavior of positional vs keyword arguments, defaults, and enforcing usage](python/args_and_kwargs.md)
 - [Design Patterns: Factory Method / Virtual Constructor](python/design-patterns-factory.md)
+- [Shipping non-Python files with a Python package (ex: sql, json, etc.)](python/packaging-non-python-data.md)
 
 TODO
 - TODO: Use of environment variables to protect credentials
