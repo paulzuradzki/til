@@ -17,6 +17,18 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta" 
 ```
 
+Sample `MANIFEST.in`
+
+```bash
+# manifest file for including non-Python files in a package
+
+# includes all files from the src/ directory .
+graft src
+
+# except __pycache__ directories or files that end in .pyc, .pyo, or .pyd
+recursive-exclude __pycache__ *.py[cod]
+```
+
 Sample `setup.cfg`. 
 * For package data, you want `include_package_data = True`. 
 * This tells `setuptools` to include non-Python files in the binary distribution that are contained in the source distribution.
