@@ -13,6 +13,9 @@ By default, the VS Code debugger does not step into the source code of third-par
 ## Solution
 * for VS Code, set `justMyCode` parameter to `false` in your debugger `launch.json` config
 * in PyCharm, there is both a `Step Into My Code` and `Step Into` button ([PyCharm docs](https://www.jetbrains.com/help/pycharm/stepping-through-the-program.html))
+* less user-friendly but works anywhere: use `pdb`
+  * [tutorial via RealPython](https://realpython.com/python-debugging-pdb/)
+  * [Python pdb docs](https://docs.python.org/3/library/pdb.html))
 
 ```
 // ./.vscode/launch.json
