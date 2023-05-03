@@ -1,4 +1,6 @@
-# Problem
+# Step into code of third-party packages with debugger
+
+## Problem
 
 By default, the VS Code debugger does not step into the source code of third-party packages.
 * e.g., if you use `import pandas as pd` and want to step into `pandas` source code
@@ -8,7 +10,7 @@ By default, the VS Code debugger does not step into the source code of third-par
   * E.g., say you've pip-installed your package from source in editable mode (`pip install -e .`). You still want to be able to step through the code using your IDE's debugger.
 
 
-# Solution
+## Solution
 * for VS Code, set `justMyCode` parameter to `false` in your debugger `launch.json` config
 * in PyCharm, there is both a `Step Into My Code` and `Step Into` button ([PyCharm docs](https://www.jetbrains.com/help/pycharm/stepping-through-the-program.html))
 
