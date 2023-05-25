@@ -5,8 +5,10 @@ To pip install from a private repo, use the `git+` prefix. Use the URL suffix to
 $ python -m pip install git+https://github.com/user/your_package.git
 
 # specify a branch
-$ pip install git+https://github.com/user/your_package.git@dev-branch
-$ pip install git+https://github.com/user/your_package.git@issue/34/foo-0.6
+$ python -m pip install git+ssh://git@github.com/<user>/<repo>.git@<branch>#egg=<package_name>
+
+$ python -m pip install git+https://github.com/user/your_package.git@dev-branch
+$ python -m pip install git+https://github.com/user/your_package.git@issue/34/foo-0.6
 ```
 
 To publish a package publically to PyPI, see this tutorial.
