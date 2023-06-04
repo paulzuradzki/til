@@ -182,6 +182,7 @@ Interpretation of the observed frequency counts for the text string `'gdkkn vnqk
 <br>
 
 *Chi-Squared Statistic*
+
 $$
 \begin{equation}
 \chi^2 = \sum_{i=1}^{n} \frac{(O_i - E_i)^2}{E_i}
@@ -220,6 +221,7 @@ dict_values([0.0834, 0.0154, 0.0273, 0.0414, 0.126, 0.0203, 0.0192, 0.0611, 0.06
 ```
 
 For each frequency value in both lists, we will use this part of the formula for chi-squared. We are omitting the summation for now:
+
 $$
 \frac{(O_i - E_i)^2}{E_i}
 $$
