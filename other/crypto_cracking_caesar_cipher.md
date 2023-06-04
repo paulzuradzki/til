@@ -327,7 +327,7 @@ ___
 
 ### Resources
 
-For more programming practice or historical reading on cryptography, see:
+For more programming practice or historical reading on introductory cryptography, see:
 
 #### [*Cracking Codes with Python* by Al Sweigart](https://inventwithpython.com/cracking/)
 * This is also a solid Python beginner programming book. I often recommend [*Automate the Boring Stuff*](http://automatetheboringstuff.com/) by the same author to beginners (just look past the camel case).
@@ -344,5 +344,4 @@ For more programming practice or historical reading on cryptography, see:
 <br>
 
 #### [*The Code Breakers* by David Khan](https://www.amazon.com/dp/0684831309) (1200 pages)
-I have not gotten around to reading Code Breakers yet. It's highly regarded and likely to be more comprehensive.
-
+I have not gotten around to reading Code Breakers yet. It's got good reviews and I keep seeing it come up in citations.
