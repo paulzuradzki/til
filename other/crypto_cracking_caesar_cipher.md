@@ -5,7 +5,7 @@ A primer on cracking the Caesar cipher using relative frequency analysis and the
 The Caesar cipher -- also known as a substitution cipher -- is a simple cipher where you encode a text string by shifting the letters by some agreed upon shift number. The cipher is named after Julius Caesar who reportedly used the cipher to protect military messages.
 
 * For example, if the key was 3, encoding the letter `'a'` would map to `'d'`, `'b'` maps to `'e'`, and so on. 
-  * Shifting 3 forward from a later letter like `'y'` can wrap around to the beginning the alphabet
+  * Shifting 3 forward from a later letter like `'y'` can wrap around to the beginning of the alphabet
   * `'y'` shifted by 3 maps to `'b'` (`y -> z -> a -> b`).
 
 * You decode an encoded string by reverse shifting using the key.
