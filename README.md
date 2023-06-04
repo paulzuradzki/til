@@ -169,3 +169,4 @@ TODO
 
 ### Other
 * [Make diagrams from markdown-like text with Mermaid](other/diagrams_with_mermaid.md)
+* [Cracking the Caesar Cipher with relative frequency analysis](other/crypto_cracking_caesar_cipher.md)
