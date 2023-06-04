@@ -1,4 +1,3 @@
-# Caesar's Dirty Little Secret
 A primer on cracking the Caesar cipher using relative frequency analysis and the chi-squared statistic.
 
 ## Background
