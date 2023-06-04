@@ -1,5 +1,5 @@
 # Caesar's Dirty Little Secret
-A primer on cracking the Caesar cipher using relative frequency analyis and the chi-squared statistic.
+A primer on cracking the Caesar cipher using relative frequency analysis and the chi-squared statistic.
 
 ## Background
 The Caesar cipher -- also known as a substitution cipher -- is a simple cipher where you encode a text string by shifting the letters by some agreed upon shift number. The cipher is named after Julius Caesar who reportedly used the cipher to protect military messages.
