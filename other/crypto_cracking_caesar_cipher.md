@@ -11,8 +11,7 @@ The Caesar cipher -- also known as a substitution cipher -- is a simple cipher w
 
 * You decode an encoded string by reverse shifting using the key.
 
-* To crack the cipher by brute force: try every shift key for each letter in the alphabet and see which decoded string most resembles natural language (e.g., English). 
-  * This is still quite manual.
+* To crack the cipher by brute force: try every shift key for each letter in the alphabet and see which decoded string most resembles natural language (e.g., English). This is still quite manual.
 
 * Detecting English
   * There is an automated approach to detecting whether a string of text resembles a language. We can compare the distribution of observed letters to a standard "expected" distribution of letters. 
@@ -22,14 +21,11 @@ The Caesar cipher -- also known as a substitution cipher -- is a simple cipher w
     * E.g., we can find the most commonly occuring letter in an encoded string, assume it was shifted from `'e'`, then apply that shift value to the whole text.
     * While that would be a good guess, `'e'` may not actually be the most frequently occuring letter in the original message despite being the most commonly used in general English.
 
-  * We want to compare the relative frequences of *all* letters in the alphabet between observed frequencies and a known expected list.
-  
-  * The chi-squared statistic captures information about the similarity between two categorical distributions; we can use it to detect English.
-    * If we wanted, we can also use a statistical lookup table (or software for computing integrals/areas-under-curves within cutoff values) to determine if the chi-squared statistic is statistically meaningful. E.g., if we get a chi-squared of 0.3 and a p-value cutoff of 0.05, then we would fail to reject the null hypothesis that the values in the observed distribution came from the expected distribution.
-    * In our case, we don't need an extra statistical table. 
-      * The chi-squared statistic already captures the similarity of 2 categorical distributions (frequency counts of letters in our case). 
-      * We can use a rule of thumb that the cipher shift key that produces the lowest chi-squared statistic is the one that most likely resembles English. We do not need to test if each decoded string attempt is English.
-* Since relative frequency in natural language follow a pattern, the Caesar cipher is quite easy to break with brute force attempts.
+  * We want some other [less strict] way to score similarity. One of these is the chi-squared statistic. Chi-squared captures information about the similarity between two categorical distributions; we can use it to detect English.
+    * The details of chi-squared are not important for our purposes except to know that a lower value corresponds to a greater similarity between two distributions.
+    * tl;dr - you can use a chi-squared *test* to estimate whether an observed frequency pattern is likely to have come from another distribution. These hypothesis tests involve statistical table lookups or software that calculates area-under-the-curve integrals with respect to a cutoff value.
+    * For this example, we just need the statistic itself.
+    * Seeking the lowest chi-squared will be our scoring procedure. Specifically, the cipher shift key that produces the lowest chi-squared statistic is the one that most likely resembles English.
 
 <br>
 
