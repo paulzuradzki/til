@@ -1,3 +1,5 @@
+# Caesar Cipher
+
 A primer on cracking the Caesar cipher using relative frequency analysis and the chi-squared statistic.
 
 ## Background
@@ -193,9 +195,7 @@ $$
 This can be interpretted as: *"Take the sum of the squared differences between the observed (O) and expected (E) values divided by the expected value."* 
   * We take the squared differences because adding up equal positive and negative differences would result in a difference of 0, which we don't want. In other words, a negative plus a positive difference of equal amounts are still 2 differences that we want to measure.
   * By dividing each squared difference by the expected value, we are standardizing the difference regardless of their size. 
-    * To say it differently, say you got overcharged a $1 on a $100 sale of a fancy dinner. This is a relatively small overcharge, but if you were charged an extra $1 on a $2 pack of gum, that same $1 difference is a bit more suspicious (relatively). Standardizing the $1 based on the size of the transaction makes the difference more comparable. 
-    * This is analogous to how we interpret variance vs. standard deviations; a standard deviation of 1 has a similar meaning regardless of the magnitude of the values in the distribution. Except for standardizing a deviation, we divide by `n` or `n-1` to get a sort of "average" deviation.
-
+    * To say it differently, say you got overcharged a $1 on a $100 sale of a fancy dinner. This is a relatively small overcharge, but if you were charged an extra $1 on a $2 pack of gum, that same $1 difference is a bit more suspicious (relatively). Standardizing the $1 based on the size of the transaction makes the difference more comparable regardless of transaction size. 
 
 <br>
 
