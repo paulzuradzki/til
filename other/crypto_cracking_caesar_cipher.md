@@ -340,3 +340,98 @@ For more programming practice or historical reading on introductory cryptography
 
 #### [*The Code Breakers* by David Khan](https://www.amazon.com/dp/0684831309) (1200 pages)
 I have not gotten around to reading Code Breakers yet. It's got good reviews and I keep seeing it come up in citations.
+
+___
+
+### Appendix
+
+Here is an implementation of the Caesar cipher breaker in Haskell. This example comes from *Programming in Haskell* by Graham Hutton.
+
+```haskell
+--caesar.hs
+
+import Data.Char
+
+-- convert a letter to an integer from 0-25
+let2int :: Char -> Int
+let2int c = ord c - ord 'a'
+
+-- convert an integer 'n' to a letter
+int2let :: Int -> Char
+int2let n = chr (ord 'a' + n)
+
+-- shift a character 'c' by 'n' positions
+-- use modular addition for wrapping around the alphabet
+shift :: Int -> Char -> Char
+shift n c | isLower c = int2let ((let2int c + n) `mod` 26)
+          | otherwise = c
+
+-- apply shift procedure to each character (x) in a string (xs)
+encode :: Int -> String -> String
+encode n xs = [shift n x | x <- xs]
+
+-- relative frequency of English letters by position [0-25]->[a-z]
+table :: [Float]
+table = [8.3, 1.5, 2.7, 4.1, 12.6, 2.0, 
+         1.9, 6.1, 6.7, 0.2, 0.9, 4.2, 
+         2.5, 6.8, 7.7, 1.7, 0.1, 5.7, 
+         6.1, 9.4, 2.9, 1.1, 2.3, 0.2, 
+         2.0, 0.1]
+
+-- the library func fromIntegral converts an int to a float
+percent :: Int -> Int -> Float
+percent n m = (fromIntegral n / fromIntegral m) * 100
+
+--count the # of lower case characters in string 
+--(the simplifying assumption is that we'll ignore upper case and special characters)
+lowers :: String -> Int
+lowers xs = length [x | x <- xs, x >= 'a' && x <= 'z']
+
+
+--count the # of occurences of character 'c' in string 'xs'
+count :: Char -> String -> Int
+count c xs = length [x | x <- xs, x == c]
+
+--get the relative frequencies (as list of floats] of each lower case letter in a string 'xs'
+freqs :: String -> [Float]
+freqs xs = [percent (count x xs) n | x <- ['a'..'z']]
+           where n = lowers xs
+
+--calculate chi-squared statistic a similarity measure between Expected and Observed values
+-- 'os'->observed, 'es'->expected
+chisqr :: [Float] -> [Float] -> Float
+chisqr os es = sum [((o-e)^2)/e | (o,e) <- zip os es]
+
+--rotate-shift a list of ints by 'n' positions
+--we will apply 'rotate' to our 'freqs' frequency values and collect chi-squared stats for each shift value
+rotate :: Int -> [a] -> [a]
+rotate n xs = drop n xs ++ take n xs
+
+--return the index positions of a value 'x' in a list of 'xs'
+--we'll use this identify at which position is the minimum chi-squared value
+positions :: Eq a => a -> [a] -> [Int]
+positions x xs = [i | (x',i) <- zip xs [0..], x == x']
+
+
+--iterate through each shift value
+table' = freqs "kdvnhoo lv ixq"
+[chisqr (rotate n table') table | n <- [0..25]]
+
+--generalized crack() function that will return a [best-guess] decoded string
+crack :: String -> String
+crack xs = encode (-factor) xs
+    where 
+        factor = head (positions (minimum chitab) chitab)
+        chitab = [chisqr (rotate n table') table | n <- [0..25]]
+        table' = freqs xs
+
+-- encode 3 "haskell is fun"
+-- encode (-3) "kdvnhoo lv ixq"
+-- percent 5 15
+-- lowers "HeLLo"
+-- lowers "Hello"
+-- count 'l' "Hello"
+-- freqs "abbcccddddeeeee"
+-- positions False [True, False, True, False] -- [1,3]
+-- crack "kdvnhoo lv ixq" --"haskell is fun"
+```
