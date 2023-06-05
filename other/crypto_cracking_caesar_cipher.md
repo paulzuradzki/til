@@ -345,6 +345,8 @@ ___
 
 ### Appendix
 
+#### Haskell Implementation
+
 Here is an implementation of the Caesar cipher breaker in Haskell. This example comes from *Programming in Haskell* by Graham Hutton.
 
 ```haskell
@@ -434,4 +436,98 @@ crack xs = encode (-factor) xs
 -- freqs "abbcccddddeeeee"
 -- positions False [True, False, True, False] -- [1,3]
 -- crack "kdvnhoo lv ixq" --"haskell is fun"
+```
+
+#### Python implementation
+```python
+import logging
+
+
+class Cipher:
+    def __init__(self):
+        self.alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+        # expected relative frequencies for English letters
+        # ex: letter 'e' in _freqs[]
+        self._freqs = [0.0834, 0.0154, 0.0273, 0.0414, 0.126, 0.0203, 0.0192, 
+                       0.0611, 0.0671, 0.0023, 0.0087, 0.0424, 0.0253, 0.068, 
+                       0.077, 0.0166, 0.0009, 0.0568, 0.0611, 0.0937, 0.0285, 
+                       0.0106, 0.0234, 0.002, 0.0204, 0.0006]
+                       
+        self.standard_freqs = dict(zip(self.alphabet, self._freqs))
+
+    def encode(self, string, shift):
+        encoded = ""
+        for c in string:
+            if c not in self.alphabet:
+                encoded += c
+            else:
+                encoded += chr(self.modular_add(ord(c), shift))
+        return encoded
+
+    def decode(self, string, shift):
+        return self.encode(string, -shift)
+
+    def modular_add(self, a, b, min_val=ord("a"), max_val=ord("z")):
+        range_size = max_val - min_val + 1
+        return min_val + ((a - min_val + b) % range_size)
+
+    def chi_square(self, observed_list, expected_list):
+        return sum([((o - e)**2 / e) for o, e in zip(observed_list, expected_list)])
+
+    def get_freqs(self, string):
+        freqs = {letter: 0 for letter in self.alphabet}
+        for c in string:
+            if c not in self.alphabet:
+                continue
+            freqs[c] += 1
+
+        freqs = {k: v / len(string) for k, v in freqs.items()}
+        return freqs
+
+    def decipher(self, encoded_string):
+
+        # attemp multiple shift offsets for each letter in the alphabet
+        shift_stats = []
+        for n in range(0, len(self.alphabet)):
+
+            # decode/shift and store the relative frequencies of each letter in the alphabet
+            # that appears in decoded string
+            decoded_freqs = self.get_freqs(self.decode(encoded_text, n)).values()
+            standard_freqs = self.standard_freqs.values()
+
+            # calcualte chi-square test statistics comparing each shift offset frequency array
+            # to standard expected English frequency array
+            chi_square = self.chi_square(decoded_freqs, standard_freqs)
+            shift_stat = {
+                "shift_key": n,
+                "chi_square": chi_square,
+                "decoded": self.decode(encoded_string, n),
+            }
+            shift_stats.append(shift_stat)
+
+        shift_stats = sorted(shift_stats, key=lambda x: x["chi_square"])
+        
+        logging.debug("Chi-Square calculations")
+        for item in shift_stats:
+            logging.debug(f"\t{item}")
+
+        # the shift offset that produced the smallest chi-square statistic is most likely to be English
+        most_likely_key = shift_stats[0]["shift_key"]
+        return most_likely_key, self.decode(encoded_string, most_likely_key)
+
+
+
+if __name__ == "__main__":
+    import logging
+    
+    logging.basicConfig(level=logging.INFO, format='%(message)s')
+
+    c = Cipher()
+    encoded_text = "qfoqywbu qcrsg kwhv ghohwghwqoz awuvh,\nqvw-geiofs hsghg obr qosgof'g qwdvsf ibwhs.\ntfseisbqm obozmgwg, dohhsfbg sasfus,\nvwrrsb asggousg, w'zz eiwqyzm ifus.\n\ngvwthsr zshhsfg, gsqfshg hvsm vczr,\nkwhv ghohwghwqoz hcczg, hvswf ghcfm ibtczrg.\nrsqcrwbu amghsfwsg, cbs pm cbs,\nibjswzwbu gsqfshg, hvs fwrrzs wg rcbs.\n\nkvoh oa w?"
+    most_likely_shift_key, deciphered = c.decipher(encoded_text.lower())
+    
+    logging.info(f"Most likely shift key: {most_likely_shift_key}")    
+    logging.info(f"Best-guess deciphered text:\n\n{deciphered}")
+
 ```
