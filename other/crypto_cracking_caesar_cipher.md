@@ -2,6 +2,14 @@
 
 A primer on cracking the Caesar cipher using relative frequency analysis and the chi-squared statistic.
 
+Contents
+* [Background](#background)
+* [Example](#example)
+* [Resources](#resources)
+* [Appendix](#appendix)
+  * [Haskell implementation](#haskell-implementation)
+  * [Python implementation](#python-implementation)
+
 ## Background
 The Caesar cipher -- also known as a substitution cipher -- is a simple cipher where you encode a text string by shifting the letters by some agreed upon shift number. The cipher is named after Julius Caesar who reportedly used the cipher to protect military messages.
 
