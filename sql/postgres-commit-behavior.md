@@ -51,3 +51,7 @@ pprint(data)
 # [{'table_name': 'foo', 'table_schema': 'public'},
 #  {'table_name': 'bar', 'table_schema': 'public'}]
 ```
+
+### References
+* https://www.psycopg.org/docs/connection.html#connection
+* https://www.psycopg.org/docs/connection.html#connection.commit
