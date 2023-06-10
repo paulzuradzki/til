@@ -101,7 +101,7 @@ ___
 ### First, what is a decorator?
 * A decorator is a function that modifies the behavior of another function without changing it's definition.
 * This is handy when you need to inject functionality but don't want to touch the internals of a function for whatever reason. This may be for code re-use (you don't want to re-write the new functionality in each function), separation of concerns, or perhaps you don't own the definition of the function that you want to modify (e.g., third-party library).
-* Some prractical use cases for decorators are:
+* Some practical use cases for decorators are:
   * Logging
   * Authentication and Authorization
   * Caching and Memoization
