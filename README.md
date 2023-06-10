@@ -35,7 +35,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [Flatten nested list with generator](python/flatten_nested_list.md)
 - [Fill PDF Forms with PyPDF2](python/pdf-fill-forms.md)
 - [Microsoft SQL Server (MSSQL) Connection String Example](python/mssql-config.md)
-- [Decorators Example](python/decorators.md)
+- [Decorators and `functools.wraps`](python/decorators-and-functools-wraps.md)
 - [Python Excel Recipes with openpyxl and xlwings](python/openpyxl-xlwings-recipes.md)
 - [Text-wrapping utility - `textwrapper`](python/textwrapper.md)
 - [Why use classes?](python/why-use-classes.md)
