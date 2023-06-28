@@ -1,45 +1,60 @@
 # How to connect to a PostgreSQL server from Python
 
-Snippet
-```python
-# use psycopg2 connections for query execution
-conn = psycopg2.connect(dbname=self.DB_NAME, user=self.DB_USER, password=self.DB_PASS, host=self.DB_HOST)
+You can connect to a PostgreSQL DB from Python by using `psycopg2` (or now newer `psycopg3`) or `sqlalchemy`.
+* SQL Alchemy is an ORM/Object-Relational Mapper which translates many SQL dialects to a common Python object-oriented interface.
+  * There are other use case for using an ORM that we won't get into here.
+* `psycopg2` is the DB driver that covers most use cases involving "raw" SQL.
 
-# use SQLAlchemy engine for pandas df.to_sql()
-engine = create_engine(f'postgresql+psycopg2://{self.DB_USER}:{self.DB_PASS}@{self.DB_HOST}/{self.DB_NAME}')
-```
+# Example
 
-Example
+Connecting with both `pyscogp2` and `sqlalchemy`.
+
 ```python
 import os
-from sqlalchemy import create_engine
+from urllib.parse import quote_plus
+
+import dotenv
 import psycopg2
-import pyodbc
+import sqlalchemy
 
-class DBLoader:
-    
-    def __init__(self, db_user=None, db_pass=None, db_host=None, db_name=None):
-        self.DB_USER = db_user
-        self.DB_PASS = db_pass
-        self.DB_HOST = db_host
-        self.DB_NAME = db_name
-        
-        # use psycopg2 connections for query execution
-        self.conn = psycopg2.connect(dbname=self.DB_NAME, user=self.DB_USER, password=self.DB_PASS, host=self.DB_HOST)
-
-        # use SQLAlchemy engine for pandas df.to_sql()
-        self.engine = create_engine(f'postgresql+psycopg2://{self.DB_USER}:{self.DB_PASS}@{self.DB_HOST}/{self.DB_NAME}')
-        
-    def __repr__(self):
-        return f"DBLoader(DB_USER={self.DB_USER}, DB_PASS=*, DB_HOST={self.DB_HOST}, DB_NAME={self.DB_NAME})"
+# you can load a .env file into a dictionary
+       # this is handy if you have name conflicts between variables 
+       # and need to switch configurations/credential types like for a prod vs dev DB
+       # e.g., env variable 'host' is defined for dev and prod, so you don't want that in your global env
+       # (else you may risk inadvertently performing actions on the wrong DB)
+db_config = dotenv.dotenv_values('.envs/.env.my_db_config_1')
 
 
-# now we can use dbl.conn or dbl.engine
-    # Linux/Mac: export secrets to environment variables in in .bashrc or .zprofile
-    # export DB_USER="" ... etc
-dbl = DBLoader(db_user=os.environ['DB_USER'], 
-               db_pass=os.environ['DB_PASS'], 
-               db_host='SERVER_NAME_OR_IP', 
-               db_name='DB_NAME')
+# you can read env variables from your global environment
+       # these variables may be set in your global ~/.bash_profile
+       # or you can load them from local .env file with dotenv
+       
+dotenv.load_dotenv(override=True)
 
+db_config = {'host': os.environ['host'], 
+             'database': os.environ['database'], 
+             'port': os.environ['port'], 
+             'user': os.environ['user'], 
+             'password': os.environ['password']
+             }
+
+# conn takes: host,user,password,port
+conn = psycopg2.connect(**db_config)
+
+# use SQLAlchemy engine for pandas df.to_sql()
+# alternatively, url = sqlalchemy.engine.url.URL(<..>)
+url = (f"postgresql+psycopg2://{db_config['user']}:{quote_plus(db_config['password'])}"
+       f"@{db_config['host']}:{db_config['port']}/{db_config['database']}")
+engine = sqlalchemy.create_engine(url)
+
+sql = """\
+select *
+from information_schema.tables
+limit 10;
+"""
 ```
+
+# Links
+* https://www.psycopg.org/docs/
+* https://docs.sqlalchemy.org/en/20/
+* https://github.com/theskumar/python-dotenv
