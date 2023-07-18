@@ -10,6 +10,7 @@ I want to test database operations, but I don't have (or don't want) access to t
 
 # Example
 
+To clone the full example, see: https://github.com/paulzuradzki/pytest_docker_tools_demo
 
 DB initialization script
 * Create a SQL DB table initializer script, which runs automatically when the container starts.
