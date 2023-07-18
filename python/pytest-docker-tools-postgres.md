@@ -1,14 +1,16 @@
-# Problem
+# pytest-docker-tools demo with PostgreSQL DB
+
+## Problem
 
 I want to test database operations, but I don't have (or don't want) access to the production database in my tests.
 
-# Solution
+## Solution
 
 * Use [pytest-docker-tools](https://github.com/Jc2k/pytest-docker-tools) to spin up a local Postgres database for testing with Docker.
 * Several Python packages exist that provide convenient functions for controlling Docker containers within the scope of pytest tests.
 
 
-# Example
+## Example
 
 To clone the full example, see: https://github.com/paulzuradzki/pytest_docker_tools_demo
 
