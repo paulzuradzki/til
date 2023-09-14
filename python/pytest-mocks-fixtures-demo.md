@@ -85,7 +85,7 @@ ___
 
 Test Example #2. With user-created fixture.
 
-Here we create our own `mocked_home_path` fixture for re-use on both tests. We pass `mocked_home_path` as an argument to the test functions (even though they're not called directly in the test functions). The `mocked_home_path` will override any calls to `Path`.
+Here we create our own `mocked_home_path` fixture for re-use on both tests. We pass `mocked_home_path` as an argument to the test functions (even though they're not called directly in the test functions). The `mocked_home_path` will be substituted for `Path` object instances.
 
 ```python
 """test_home_dir.py
