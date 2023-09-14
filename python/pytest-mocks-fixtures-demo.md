@@ -1,4 +1,4 @@
-# Software Testing with Pytest using Mocks and Fixtures
+# Software Testing with Pytest Using Mocks and Fixtures
 
 # Problem(s)
 1) We want to test the behavior of a function that relies on some other unknown or dynamic thing (e.g., a user's home directory).
