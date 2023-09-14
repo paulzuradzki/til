@@ -82,6 +82,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 - [Design Patterns: Factory Method / Virtual Constructor](python/design-patterns-factory.md)
 - [Packaging non-Python files with a Python package (ex: sql, json, etc.)](python/packaging-non-python-data.md)
 - [pytest - set up local Postgres DB for testing with Docker](https://github.com/paulzuradzki/pytest_docker_tools_demo)
+- [pytest - Software Testing with Pytest Using Mocks and Fixtures](python/pytest-mocks-fixtures-demo.md)
 
 TODO
 - TODO: Use of environment variables to protect credentials
