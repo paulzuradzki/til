@@ -171,6 +171,7 @@ ___
 
 # Discussion
 * Be cautious not to over-use mocking. 
-* Mocks are time-consuming and tend to test implementation rather than behavior. 
-* Your tests are more likely to fail in spite of valid code changes (refactoring).
-* That being said, they can help a lot to isolate parts of the system that you are testing.
+* Mocks can be time-consuming, add complexity, and tend to test implementation rather than behavior.
+* On the last point, this means tests are more likely to fail when the code changes even if the functionality has not change. This makes refactoring harder.
+* That being said, mocking can help  isolate parts of the system that you are testing.
+* If you are mocking a commonly used system/service, chances are that there is already a library for it (cloud storage, database, HTTP requests). Check the web before rolling your own.
