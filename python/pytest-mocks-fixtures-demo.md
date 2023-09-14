@@ -34,6 +34,8 @@ We will test 2 functions `get_home_dir` and `print_home_dir`.
 # Example
 ___
 
+Here are the functions that we will test.
+
 ```python
 """home_dir.py
 """
@@ -53,6 +55,8 @@ if __name__ == "__main__":
 ```
 
 ___
+
+What follows is the test code.
 
 Test Example #1. Using `patch.object` context managers. Note the repetition in both tests.
 
