@@ -6,7 +6,7 @@
 3) We want to test the result of side effects for functions with no return value like a print operation to standard output.
 
 We will test 2 functions `get_home_dir` and `print_home_dir`.
-* `get_home_dir` returns a string. E.g., 'Users/pzuradzki` on my machine.
+* `get_home_dir` returns a string. E.g., '/Users/paul` on my machine.
 * `print_home_dir` prints that value.
                                                                   
 # Solution
