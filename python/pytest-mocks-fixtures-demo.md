@@ -44,7 +44,7 @@ from pathlib import Path
 
 
 def get_home_dir() -> str:
-    """Gets user home directory. Ex: "/Users/paul".
+    """Gets user home directory. Ex: "/Users/paul"."""
     return str(Path.home())
 
 
