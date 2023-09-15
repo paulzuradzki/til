@@ -59,7 +59,8 @@ ___
 
 What follows is the test code.
 
-Test Example #1. Using `patch.object` context managers. Note the repetition in both tests.
+### Test Example #1
+Using `patch.object` context managers. Note the repetition in both tests.
 
 ```python
 """test_home_dir.py
@@ -84,7 +85,9 @@ def test_print_home_dir(capsys) -> None:
 
 ___
 
-Test Example #2. With user-created fixture.
+### Test Example #2
+
+With user-created fixture.
 
 Here we create our own `mocked_home_path` fixture for re-use on both tests. We pass `mocked_home_path` as an argument to the test functions (even though they're not called directly in the test functions). The `mocked_home_path` will be substituted for `Path` object instances.
 
@@ -115,7 +118,7 @@ def test_print_home_dir(capsys, mocked_home_path) -> None:
 
 ```
 
-Test Example #3a
+### Test Example #3a
 
 Using patch decorator.
 
@@ -142,7 +145,7 @@ def test_print_home_dir(mocked_home_path, capsys) -> None:
 
 ```
 
-Test Example #3a
+### Test Example #3b
 
 Subtle difference: using `@patch.object` instead of `@patch`.
 ```python
