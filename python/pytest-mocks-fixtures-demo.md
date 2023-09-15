@@ -15,7 +15,7 @@ We will test 2 functions `get_home_dir` and `print_home_dir`.
   * This can be done using a context manager or decorator.
 * Since we need to mock `Path` twice, we can also create a fixture for code re-use. See Example #2.
 * For `print_home_dir` - we want to capture standard output. `pytest` has a built-in fixture `capsys` that we can use for this.
-* In Example #3, we just show another variation of using unittest.mock.patch with a decorator.
+* In Example #3, we just show another variation of using `unittest.mock.patch` with a decorator.
 * `autospec=True` - it's generally good to use `autospec=True` by default. `autospec=True` makes your mock match the specification of class attributes and methods of the class being mocked. Otherwise, your mock class may accept invalid methods. This leaves your test being susceptible to bugs like typos in method calls. These invalid method calls could pass your tests inadvertently.
 
 # References
@@ -27,9 +27,10 @@ We will test 2 functions `get_home_dir` and `print_home_dir`.
     * In unittest, you typically use setUp and tearDown methods to set up a fixed environment ("fixture") for each test case to run in.
     * In pytest, fixtures are more flexible and can be created using the `@pytest.fixture` decorator. They are functions that return a resource and can be injected into test functions as arguments.
 * `mock` - Mocks are objects that mimic the behavior of real objects in a controlled way. The `unittest` library has a `Mock` class in its `unittest.mock` module for creating mock objects. Mocks can be configured to return specific values when invoked, allowing you to isolate the code under test from external dependencies.
-* `monkeypatching` 
-    * In `unittest`, Monkey patching generally refers to dynamically modifying or extending the behavior of classes or modules at runtime. In unittest, you might use the unittest.mock library to replace attributes temporarily. Monkeypatching is simpler and more limited in scope compared to mocking. You can set attributes with monkeypatch but you need mocking to mock behavior like return values and side effects.
-    * In `pytest`, Pytest makes monkey patching easy with its built-in monkeypatch fixture, which allows you to modify classes, functions, dictionaries, and more.
+* `monkeypatch`  - this is distinct from `unittest.mock.patch`
+    * In `unittest`, Monkey patching generally refers to dynamically modifying or extending the behavior of classes or modules at runtime. In unittest, you might use the unittest.mock library to replace attributes temporarily. Monkeypatching is simpler and more limited in scope compared to mocking.
+    * Monkey patching vs mocking - You can set attributes with `monkeypatch` but you need mocking to mock more complex behavior like return values and side effects.
+    * In `pytest`, Pytest has a built-in monkeypatch fixture, which allows you to modify classes, functions, dictionaries, and more.
 
 # Example
 ___
