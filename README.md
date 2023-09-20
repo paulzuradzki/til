@@ -151,6 +151,7 @@ TODO
 - [VS Code - configuration for Anaconda prompt](editors/vs-code/settings-json.md)
 - [How to Remote SSH with `sudo` privilege in VS Code](editors/vs-code/remote-ssh-with-sudo.md)
 - [Step into code of third-party packages with debugger](editors/vs-code/debug-third-party-packages.md)
+- [VS Code Extensions](editors/vs-code/vs-code-extensions.md)
 
 ### Resources
 - [So You Want to Learn Python... (Python resource list)](python/so-you-want-to-learn-python.md)
