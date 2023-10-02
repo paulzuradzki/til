@@ -165,6 +165,19 @@ TODO
     * [tabulate](https://github.com/astanin/python-tabulate)
     * [scrubadub](https://github.com/LeapBeyond/scrubadub)
     * [ftfy(fixes text for you)](https://github.com/rspeer/python-ftfy)
+* Code quality and testing
+  * [pytest](https://docs.pytest.org/en/7.4.x/contents.html)
+  * pytest plugins
+    * [pytest-xdist](https://pypi.org/project/pytest-xdist/) - distributed testing
+    * [pytest-cov](https://pypi.org/project/pytest-cov/) - measure test coverage
+    * [pytest-randomly](https://pypi.org/project/pytest-randomly/) - randomly order tests and control random.seed to reduce flaky tests
+    * [pytest-freezegun](https://pypi.org/project/pytest-freezegun/) - freeze time by mocking the datetime module; `pytest` wrapper around `freezegun`
+    * [pytest-sugar](https://pypi.org/project/pytest-sugar/) - prettier display of test output and progress bar
+  * [moto](https://docs.getmoto.org/en/latest/index.html) - mock out tests based on AWS infrastructure
+  * [hypothesis](https://hypothesis.readthedocs.io/en/latest/index.html) - property-based testing
+  * [black](https://black.readthedocs.io/en/stable/index.html) - formatting
+  * [ruff](https://docs.astral.sh/ruff/) - linting
+  * [unimport](https://unimport.hakancelik.dev/) - remove un-used imports
 
 ### Healthcare
 * [CMS Risk Adjustment Files](healthcare/cms-risk-adjustment-files.md)
