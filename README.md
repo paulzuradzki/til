@@ -127,6 +127,7 @@ TODO
 - [PostgeSQL connection from Python](sql/postgres-connect-with-python.md)
 - [PostgreSQL fast bulk load via `copy from`](sql/fast-bulk-copy-postgres.md)
 - [PostgreSQL update and delete joins](sql/postgresql-update-delete-join.md)
+- [PostgreSQL - list roles and permissions](sql/list-postgres-roles-and-permissions.md)
 - TODO: pivot, unpivot
 
 ### C
