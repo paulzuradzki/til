@@ -19,6 +19,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 ---
 
 ### Python
+- [Self-host private PyPI index](python/packaging-setup-private-pypi-index.md)
 - [Pandas rename column inside method chain](python/pandas-rename-columns-in-chain.md)
 - [Pandas read_csv() from a file in ZIP URL](python/pandas_read_from_file_in_url_zip.md)
 - [Multithreading - running asynchronous steps that wait for other events to complete](python/multithreading-wait-for-event.md)
