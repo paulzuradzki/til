@@ -10,3 +10,7 @@
 ## File Size Reduction
 - [Davinci Resolve : How to Reduce File Size](https://www.youtube.com/watch?v=PJhVDKbMLXQ)
 - [How To Export Low File Size Videos in Davinci Resolve 18 | Export Videos in a Small Size | Tutorial](https://www.youtube.com/watch?v=H4cORXlBDBA)
+
+
+## Courses
+[DaVinci Resolve Course - Video Editing for Beginners (2024)](https://www.youtube.com/watch?v=mgCqndlTWFU) via FreeCodeCamp and Gavin Lon
