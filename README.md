@@ -194,3 +194,4 @@ TODO
 * [Make diagrams from markdown-like text with Mermaid](other/diagrams_with_mermaid.md)
 * [Cracking the Caesar Cipher with relative frequency analysis](other/crypto_cracking_caesar_cipher.md)
 * [Video Editing with DaVinci Resolve](other/video-editing-davinci-resolve.md)
+* [Cache Python Dependencies in GitHub Actions Automated Tests](other/gh_actions_caching_python_tests.md)
