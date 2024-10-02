@@ -14,6 +14,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 * [Editors](#editors)
 * [Resources](#resources)
 * [Healthcare](#healthcare)
+* [Software Engineering](#software-engineering)
 * [Other](#other)
 
 ---
@@ -184,6 +185,10 @@ TODO
 ### Healthcare
 * [CMS Risk Adjustment Files](healthcare/cms-risk-adjustment-files.md)
 * [Implementing HEDIS Continuous Enrollment Requirements](healthcare/hedis_continuous_enrollment_reqs.md)
+
+### Software Engineering
+* [Dependency Injectioin and Dependency Inversion](software-engineering/dependency-injection-and-inversion)
+* [SOLID Principles](software-engineering/dependency-injection-and-inversion)
 
 ### Other
 * [Make diagrams from markdown-like text with Mermaid](other/diagrams_with_mermaid.md)
