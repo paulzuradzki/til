@@ -130,6 +130,7 @@ TODO
 - [PostgreSQL fast bulk load via `copy from`](sql/fast-bulk-copy-postgres.md)
 - [PostgreSQL update and delete joins](sql/postgresql-update-delete-join.md)
 - [PostgreSQL - list roles and permissions](sql/list-postgres-roles-and-permissions.md)
+- [SQL Formatting in Python with sqlparse](sql/sql-parse.md)
 - TODO: pivot, unpivot
 
 ### C
