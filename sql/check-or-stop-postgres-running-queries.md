@@ -26,6 +26,21 @@ SELECT pg_terminate_backend(pid)
 FROM pg_stat_activity
 WHERE datname = 'my_db_name' AND pid <> pg_backend_pid()
 ;
+
+/* Find long-running queries beyond X interval */
+select
+    pid,
+    usename,
+    state,
+    query,
+    query_start,
+    now() - query_start as duration
+from
+    pg_stat_activity
+where
+    state = 'active'
+    and now() - query_start > interval '10 hour'
+  ;
 ```
 
 FYI that you need superuser or `pg_read_all_stats` role permissions. They can be granted like below.
