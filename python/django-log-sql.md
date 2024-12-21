@@ -22,6 +22,27 @@ Use a decorator like below or extract the query counting and slicing logic for y
 
 Use with caution! Logs are a source of security risk particularly if they are stored and may reveal sensitive data in the event of a data breach. Parameterized queries help obscure to a certain extent (`%s` placeholders), but this is not a good guarantee. Reserve this logging technique for local debugging.
 
+Usage
+
+```python
+from models import MyDjangoORMModel
+import logging
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+
+@log_sql(logger=logger)
+def make_thing():
+    MyDjangoORMModel.objects.create(name="thing")
+
+# fallback to print statements if no logger specified    
+@log_sql
+def make_thing():
+    MyDjangoORMModel.objects.create(name="thing")
+```
+
+Decorator
+
 ```python
 from functools import wraps
 
