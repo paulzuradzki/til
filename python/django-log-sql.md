@@ -84,7 +84,7 @@ def log_sql(func=None, *, logger=None):
             n_queries_before = len(connection.queries)
 
             # CALL / EXECUTE ORM QUERY
-            func(*args, **kwargs)
+            result = func(*args, **kwargs)
 
             # AFTER
             n_queries_after = len(connection.queries)
@@ -105,6 +105,8 @@ def log_sql(func=None, *, logger=None):
             else:
                 print("\n"+formatted_sql)
                 print(query_counts)
+
+            return result
 
         return wrapper
 
