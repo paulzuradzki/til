@@ -111,7 +111,7 @@ with TimeIt() as t:
 ```
 
 
-### Combining context manager and decorator
+### Shorthand for context manager only
 
 Using `contextlib.contextmanager`
 
@@ -125,27 +125,45 @@ def time_it():
     end = time.time()
     print('Time taken:', end - start)
 
-# Usage - with block
 with time_it():
     for i in range(3):
         time.sleep(.5)
+```
 
-# Usage - as decorator
+### Shorthand for context manager and decorator combined
+
+```python
+import time
+from contextlib import contextmanager, ContextDecorator
+
+class time_it(ContextDecorator):
+    def __enter__(self):
+        self.start = time.time()
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        self.end = time.time()
+        print('Time taken:', self.end - self.start)
+
 @time_it()
 def do_thing():
     for i in range(3):
         time.sleep(.5)
     return "foo"
 
+
+with time_it():
+    # Same as do_thing() but without defining function
+    for i in range(3):
+        time.sleep(.5)
+
 do_thing()
 ```
 
 # Discussion
 
-**Decorators vs Context Managers**
+On when to use Decorators vs Context Managers: Decorators are good for modifying the behavior of entire functions. For finer-grained control within blocks or parts of a function, you can use a context manager. Context managers do well when you want want temporary, localized behavior.
 
-Decorators are good for modifying the behavior of entire functions. For finer-grained control within blocks or parts of a function, you can use a context manager. Context managers do well when you want want temporary, localized behavior.
-
-See also: [decorators and functools.wraps](python/decorators-and-functools-wraps.md)
-
-Docs: [contextlib.contextmanager](https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager)
+References
+- [decorators and functools.wraps](python/decorators-and-functools-wraps.md)
+- Docs: [contextlib.contextmanager](https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager)
