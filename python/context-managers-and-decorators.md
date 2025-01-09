@@ -53,9 +53,13 @@ do_thing()
 # 'foo'
 ```
 
+For explainer on decorators, see: [decorators and functools.wraps](python/decorators-and-functools-wraps.md)
+
 ### Combining context manager and decorator
 
-Using dunder methods
+- By also implementing `__call__`, we define behavior on happens when we call our class with left-right parens (`TimeIt()`).
+- If a function is passed to it, we define before-after behaviour around the function call and return the same result as the decorated function.
+- Otherwise, return `self` for usage in a with-block defined by `__enter__` and `__exit__`.
 
 ```python
 class TimeIt:
@@ -80,7 +84,8 @@ class TimeIt:
         end = time.time()
         print('Time taken:', end - self.start)
         
-        
+
+# rename to support more PEP8-ish style for functions        
 time_it = TimeIt
 ```
 
@@ -113,7 +118,7 @@ with TimeIt() as t:
 
 ### Shorthand for context manager only
 
-Using `contextlib.contextmanager`
+We can skip defining a class and use `@contextmanager` instead. Instead of defining `__enter__` and `__exit__` methods, our "before" and "after" behavior is defined before and after the `yield` keyword, respectively.
 
 ```python
 from contextlib import contextmanager
@@ -131,6 +136,8 @@ with time_it():
 ```
 
 ### Shorthand for context manager and decorator combined
+
+If you want to use the same code for both a decorator and context manager, you can inherit from `ContextDecorator` as a shortcut to avoid defining the `__call__` method.
 
 ```python
 import time
@@ -165,5 +172,4 @@ do_thing()
 On when to use Decorators vs Context Managers: Decorators are good for modifying the behavior of entire functions. For finer-grained control within blocks or parts of a function, you can use a context manager. Context managers do well when you want want temporary, localized behavior.
 
 References
-- [decorators and functools.wraps](python/decorators-and-functools-wraps.md)
 - Docs: [contextlib.contextmanager](https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager)
