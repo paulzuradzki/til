@@ -20,6 +20,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 ---
 
 ### Python
+- [Comparing Context Managers and Decorators](python/context-managers-and-decorators.md)
 - [Django - Debug and Log SQL from ORM Queries](python/django-log-sql.md)
 - [Concurrent Processing Options for IO-bound Tasks](python/concurrent-io-bound-tasks.md)
 - [Self-host private PyPI index](python/packaging-setup-private-pypi-index.md)
