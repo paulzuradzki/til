@@ -20,6 +20,7 @@ This log also doubles as a lazy tech "blog". While I am the primary audience, I 
 ---
 
 ### Python
+- [Versioning both explicit and implicit pip dependencies with `pip-tools` and `pip-compile`](python/pip-version-both-explicit-and-implicit-pip-dependencies.md)
 - [Comparing Context Managers and Decorators](python/context-managers-and-decorators.md)
 - [Django - Debug and Log SQL from ORM Queries](python/django-log-sql.md)
 - [Concurrent Processing Options for IO-bound Tasks](python/concurrent-io-bound-tasks.md)
