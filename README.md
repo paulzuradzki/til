@@ -193,6 +193,7 @@ TODO
 * [Implementing HEDIS Continuous Enrollment Requirements](healthcare/hedis_continuous_enrollment_reqs.md)
 
 ### Software Engineering
+* [Refactoring deeply nested conditionals](software-engineering/refactoring-guard-clause.md)
 * [Dependency Injectioin and Dependency Inversion](software-engineering/dependency-injection-and-inversion)
 * [SOLID Principles](software-engineering/dependency-injection-and-inversion)
 
