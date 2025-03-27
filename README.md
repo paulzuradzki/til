@@ -152,6 +152,7 @@ TODO
 - [Use grep to search for source files with lines containing words that match a pattern](linux/grep-search-for-source-files-with-lines-matching-pattern.md)
 
 ### Git
+- [Customize `.gitignore`](git/customizing-gitgnore.md)
 - [Show list of files with diffs since latest commit](git/show-latest-diffs.md)
 - [Git snippets](git/git_snippets.md)
 - [.gitignore snippet](git/gitignore-snippet.md)
