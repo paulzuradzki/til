@@ -199,6 +199,7 @@ TODO
 * [SOLID Principles](software-engineering/dependency-injection-and-inversion)
 
 ### Other
+* [How To: Show code blocks side-by-side in markdown with html](other/markdown-show-side-by-side-code-blocks-with-html.md)
 * [Show code diffs in markdown](other/markdown-diffs.md)
 * [Make diagrams from markdown-like text with Mermaid](other/diagrams_with_mermaid.md)
 * [Cracking the Caesar Cipher with relative frequency analysis](other/crypto_cracking_caesar_cipher.md)
