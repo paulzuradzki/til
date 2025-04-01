@@ -55,3 +55,7 @@ console.log("Hello, world!");
 
 </div> <!-- close flex container to start showing things below -->
 ````
+
+# On GitHub
+
+GitHub markdown is more strict and strips out styles, so the approach above won't work in GitHub.
