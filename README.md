@@ -194,9 +194,9 @@ TODO
 * [Implementing HEDIS Continuous Enrollment Requirements](healthcare/hedis_continuous_enrollment_reqs.md)
 
 ### Software Engineering
+* [Refactoring conditional logic](software-engineering/refactoring-conditional-logic/refactoring-conditional-logic.md)
 * [Refactoring deeply nested conditionals](software-engineering/refactoring-guard-clause.md)
 * [Dependency Injectioin and Dependency Inversion](software-engineering/dependency-injection-and-inversion)
-* [SOLID Principles](software-engineering/dependency-injection-and-inversion)
 
 ### Other
 * [How To: Show code blocks side-by-side in markdown with html](other/markdown-show-side-by-side-code-blocks-with-html.md)
