@@ -143,6 +143,7 @@ TODO
 
 ### Linux
 - TODO: systemd - deaemon process control config example
+- [bash tricks with git](linux/bash-and-awk.md)
 - [supervisorctl - daemon process control config example](linux/supervisorctl-config-example.md)
 - [nginx sample web server config](linux/nginx-web-server-config.md)
 - [Check processes](linux/check-processes.md)
